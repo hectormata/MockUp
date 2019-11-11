@@ -1,38 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta id='descriptionTag' name="description" content="This is a description for the site.">
     <meta name="author" content="">
-<!--    <link id="favicon" rel="icon" href="https://heyleia.com/images/favicon.png">-->
+
+    <!-- CSS Files -->
+<!--    <link href="Stylesheets/main.css" rel="stylesheet">-->
+
+    <!-- Custom Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+
+    <!-- Script Files -->
+
+    <!-- Logo -->
+    <link id="favicon" rel="icon" href="Images/fullsizeoutput_9e.png">
+
+    <!-- Title -->
     <title>Alumbrado</title>
+
     <!-- Plugin Core CSS -->
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+
     <!-- Theme CSS -->
-    <script src="js/sweetalert.min.js"></script>
-    <script src="https://heyleia.com/js/analytics.js"></script>
-    <link rel="stylesheet" href="css/sweetalert.css">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="Scripts/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="Stylesheets/sweetalert.css">
+    <link href="Stylesheets/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <style id='generalStyle'>
     .navbar-brand {
         padding: 0;
     }
-    .teamItem a { color: rgb(243, 156, 18);}.sectionTitle {text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.57);}#shopButton {
-                                                                                                                text-shadow: none;
-                                                                                                                padding: 10px 40px;
-                                                                                                                border-radius: 0;
-                                                                                                                border: none;
-                                                                                                            }
+    .teamItem a {
+        color: rgb(243, 156, 18);
+    }
+    .sectionTitle {
+        text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.57);
+    }
+    #shopButton {
+        text-shadow: none;
+        padding: 10px 40px;
+        border-radius: 0;
+        border: none;
+    }
     #bookButton {
         text-shadow: none;
         padding: 10px 40px;
@@ -194,7 +214,7 @@
      }
     header .btn:hover {
         background: rgb(255,255,255) !important;
-        color: !important;
+        color: white !important;
         border: solid 2px rgb(255,255,255) !important;
     }
     header .btn::selection {
@@ -407,7 +427,7 @@
     }
     .pContainer {
         display: table;
-        position absolute;
+        position: absolute;
         width: 100%;
         height: 100%;
         left: 0;
@@ -503,977 +523,1228 @@
          font-size: 18px;
      }
 </style>
+
 <body>
-<button id="trigger-overlay" type="button">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-</button>
-<div id='menuOverlaySection' class="overlay overlay-contentpush">
-    <button id='close-menu' style='color: white; padding: 0; float: none; text-align: center;' type="button" class="overlay-close">
-        <i class="fa fa-times" aria-hidden="true"></i>
+    <button id="trigger-overlay" type="button">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
-    <nav id="mainNav" role="navigation">
-        <ul>
-            <li>
-                <a id="aboutItem" class="menuItem page-scroll " href="#about">About</a>
-            </li><li>
-            <a id="featuresItem" class="menuItem page-scroll " href="#features">Features</a>
-        </li><li>
-            <a id="testimonialsItem" class="menuItem page-scroll " href="#testimonials">Testimonials</a>
-        </li><li>
-            <a id="teamItem" class="menuItem page-scroll " href="#team">Team</a>
-        </li><li>
-            <a id="blogItem" class="menuItem page-scroll " href="#blog">Blog</a>
-        </li><li>
-            <a id="contactItem" class="menuItem page-scroll " href="#contact">Contact</a>
-        </li><li>
-            <a id="shopItem" class="menuItem page-scroll " href="/shop">Shop</a>
-        </li>
-        </ul>
-    </nav>
-</div>
-<script src="/js/modernizer.js"></script>
-<script src="/js/bankers.js"></script>
-<script src="/js/menu.js"></script>
-<header id='page-top'><div id='singleImageHeader' class="container headerContainer" style="background: url('/img/Ljnh2-8H59v-NRrvF-Cj279-GcEb5.jpeg'); padding-top: 50px; background-size: cover; background-position: 50% 50%; background-repeat: none; position relative">
-    <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-    <div style='display: flex; position: relative; height: 100%; width: 100%' class="row row-eq-height"><div style="text-align: left" class="col-md-6 col-md-offset-1 headerSectionDiv" id='mainTitleSection'><div class='headerContentContainer'><h3 id='mainTitle'>Alumbrado</h3><h6 id='mainSubtitle'>Music App</h6></div></div><div style="text-align: left" class="col-md-4 pSection headerSectionDiv"><div class='pContainer'><div style='display: table-cell; vertical-align: middle;'><a id="extraHTML"><span><i class="fa fa-spinner" aria-hidden="true"></i><span>Alumbrado</span></span></a><style>#extraHTML:hover{text-decoration: none !important;} #extraHTML{font-size:40px;} #extraHTML span { color: #fff; font-size: 46px; font-weight: bold; letter-spacing: 4px; margin-top: 12px;}#extraHTML i {margin-right: 6px;color: rgb(243, 156, 18);}#extraHTML {height: 50px;padding: 15px 15px;line-height: 50px;}</style> <div class='row'><div class='col-md-12'><style id='newsletterStyle'>
-        .newsLetterForm {
-            text-align: left;
-            margin-top: 30px;
-        }
-        .newsLetterForm p {
-            text-align: left;
-            font-size: 18px;
-        }
-        #subscribeButton {
-            color: rgb(255,255,255) !important;
-            background: rgb(243, 156, 18) !important;
-            border-color: rgb(255,255,255) !important;
-            border-radius: 0px !important;
-            margin-bottom: 10px;
-            margin-right: 0;
-        }
-        #subscribeButton:hover {
-            color: rgb(243, 156, 18) !important;
-            background: rgb(255,255,255) !important;
-            border-color: rgb(243, 156, 18) !important;
-        }
-        .newsLetterForm .input-group input, textarea {
-            background: rgb(255,255,255) !important;
-            color: rgb(0,0,0) !important;
-            border-radius: 0px !important;
-            text-transform: none !important;
-            border-bottom-left-radius: 0 !important;
-            border-top-left-radius: 0 !important;
-        }
-        .newsLetterForm .input-group input::placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .newsLetterForm .input-group textarea::placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .newsLetterForm .input-group input:-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .newsLetterForm .input-group textarea:-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .newsLetterForm .input-group input::-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .newsLetterForm .input-group textarea::-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .newsLetterForm .input-group-addon {
-            background: rgb(243, 156, 18) !important;
-            color: rgb(255,255,255) !important;
-            border-radius: 0px;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        .newsLetterForm .input-group-addon:firstChild {
-            margin-left: 0px;
-        }
-        .newsLetterForm {
-            background: rgba(0,0,0,0.75) !important;
-            border: none !important;
-            color: rgb(255,255,255) !important;
-            padding: 10px;
-            text-align: center;
-        }
-        .newsLetterForm .form-control {
-            border: 1px solid rgb(255,255,255);
-        }
-        .newsletterTitle {
-            color: rgb(255,255,255) !important;
-            font-size: 40px;
-            padding-bottom: 15px;
-            text-align: center;
-        }
-    </style>
-        <form class='newsLetterForm col-md-12' onsubmit="event.preventDefault(); return false;">
-            <h5 id='newsletterTitle' class='sectionTitle newsletterTitle'>Subscribe to Our NewsLetter</h5>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i id='newsletterAddOn' class="fa fa-envelope"></i></span>
-                    <input name="sEmail" type="email" class="form-control" id="sEmail" placeholder="Your Email" required="required"/>
-                </div>
-            </div>
-            <button onclick='subscribe()' type="submit" class="btn btn-primary" id="subscribeButton">Subscribe</button>
-        </form>
-        <script>
-            var subscribe = function() {
-                swal({
-                    title: "Confirmation",
-                    text: "Are you sure you want to subscribe to our newsletter?",
-                    type: "info",
-                    showCancelButton: true,
-                    closeOnConfirm: false,
-                    showLoaderOnConfirm: true
-                }, function () {
-                    var spinner = document.createElement('div');
-                    var outer = document.createElement('div');
-                    outer.id = 'spinnerLoading';
-                    spinner.className = 'spinnerLoading';
-                    outer.style.background = 'rgba(0,0,0,0.7)';
-                    outer.style.borderRadius = '20px';
-                    outer.style.position = 'fixed';
-                    outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
-                    outer.style.width = '205px';
-                    outer.style.top = '30%';
-                    outer.style.height = '205px';
-                    outer.style.zIndex = '10000';
-                    spinner.style.marginLeft = '42.5px';
-                    spinner.style.marginTop = '42.5px';
-                    outer.appendChild(spinner);
-                    document.body.appendChild(outer);
-                    if (!addedSpinner) {
-                        addedSpinner = true;
-                        addSpinnerStyle();
-                    }
-                    $.ajax({
-                        url: 'https://heyleia.com/php/clientNewsletter.php',
-                        data: {
-                            'email': document.getElementById('sEmail').value,
-                            'url': window.location.origin.split('//')[1]
-                        },
-                        type: 'POST',
-                        success: function(data) {
-                            document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
-                            if (data === 'success') {
-                                swal("Success", "You have successfully subscribed to our newsletter!", "success");
-                                document.body.className = '';
-                            } else {
-                                swal("Uh Oh!", data, "error");
-                                document.body.className = '';
-                            }
-                        },
-                        error: function(err) {
-                            console.log(err);
-                            document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
-                            swal("Uh Oh!", "There was a problem. Please try again later.", "error");
-                            document.body.className = '';
-                        }
-                    });
-                });
-                document.body.className = '';
-            }
-            var addedSpinner = false;
-            var addSpinnerStyle = function() {
-                var style = document.createElement('style');
-                style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
-                document.body.appendChild(style);
-            };
-        </script></div></div><br><br><a id="shopButton" style="margin-right: 0px" class="btn btn-outline btn-xl" href="/shop">Shop</a><br><br></div></div></div></div></div></header>
-<section style='background: white;'><div class='container pageSection text-section-1 u483dhvBpO9Js5rgliBYQU5hyjHnA51xAxFXEU5i'>
-    <div class='row'>
-        <div class='col-md-4 outerGrid'>
-            <div class='innerGridTable'>
-                <div class='innerTableContent'>
-                    <img src='https://fakeimg.pl/500x300'/>
-                </div>
-            </div>
-        </div>
-        <div class='col-md-4 outerGrid'>
-            <div class='innerGridTable'>
-                <div class='innerTableContent'>
-                    <h4>Check Us Out</h4>
-                    <p>We are one of the the top Fantasy Music solutions in the area. We have been giving high caliber, intensely evaluated Fantasy Music solutions to all who come to us for years. In that time, we have found out about client administration and the benefit of realizing our customers needs. We adore driving by ordinary and perceiving how extraordinary we can become together!</p>
-                </div>
-            </div>
-        </div>
-        <div class='col-md-4 outerGrid'>
-            <div class='innerGridTable'>
-                <div class='innerTableContent'>
-                    <img src='https://fakeimg.pl/500x300'/>
-                </div>
-            </div>
-        </div>
+
+    <div id='menuOverlaySection' class="overlay overlay-contentpush">
+
+        <button id='close-menu' style='color: white; padding: 0; float: none; text-align: center;' type="button" class="overlay-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+
+        <nav id="mainNav" role="navigation">
+
+            <ul>
+                <li>
+                    <a id="aboutItem" class="menuItem page-scroll " href="#about">About</a>
+                </li>
+                <li>
+                    <a id="featuresItem" class="menuItem page-scroll " href="#features">Features</a>
+                </li>
+                <li>
+                    <a id="testimonialsItem" class="menuItem page-scroll " href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a id="teamItem" class="menuItem page-scroll " href="#team">Team</a>
+                </li>
+                <li>
+                    <a id="blogItem" class="menuItem page-scroll " href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a id="contactItem" class="menuItem page-scroll " href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a id="shopItem" class="menuItem page-scroll " href="/shop">Shop</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <style>
-        .text-section-1 img {
-            width: 100%;
-        }
-        .text-section-1 {
-            text-align: center;
-        }
-        .text-section-1 .col-md-4 {
-            padding: 30px 15px;
-        }
-        .text-section-1 h4 {
-            font-size: 40px;
-        }
-    </style>
-</div></section><section style="background: url('/img/rgqzg-afnz9-OFV9y-oMXwF-gKiy3.jpeg'); position: relative">
-    <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-    <style id='aboutStyle'>
-        #aboutParagraph {
-            font-size: 18px;
-            padding-bottom: 40px;
-        }
-        #aboutImage {
-            max-width: 100%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        #about {
-            color: rgb(255,255,255) !important;
-        }
-        #about .sectionTitle {
-            color: rgb(255,255,255) !important;
-        }
-        #about .sectionSubtitle {
-            color: rgb(255,255,255) !important;
-        }
-        #about hr {
-            border-width: 2px;
-            border-color: rgb(255,255,255);
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-    </style>
-    <div class="container pageSection" id="about">
-        <h1 id='aboutTitle' class="sectionTitle">About</h1>
-        <h4 id='aboutSubtitle' class="sectionSubtitle">Learn more about what we do.</h4>
-        <hr>
-        <div id='aboutContent' style='display: flex' class="row">
-            <div class=''><div class='row'><div style='display: inline-grid; position: relative;' class='col-md-6 extraTextSectionLeft'><div style='height: 100%; width: 100%; display: table;'>
-                <p style='display: table-cell; vertical-align: middle;' class='aboutParagraph' id='aboutParagraph'>I didn't try filling in this paragraph for you because who knows what you do as well as you! Try replacing this paragraph with a few sentances that describe what you do, how you do it, and why you are better than everyone else. Remember that sometimes less is more, so it is ok to be brief here if you don't know what to write. The main goal is to communicate to your viewer that you can offer them some value, and encourage them to reach out to you to learn even more about what that value is! Also, feel free to look up other websites like yours online for some inspiration.</p>
-            </div></div>
-                <div style='position: relative; padding: 0; display: inline-grid;' class='col-md-6'><div style='height: 100%; width: 100%; display: table;'>
-                    <div style='display: table-cell; vertical-align: middle; width: 100%; height: 100%;'>
-                        <img id='aboutImage' style='max-width: 100%; max-height: 100%;' src='/img/G7b02-ZJlQP-rWTUk-CBnRS-6hxUy.jpeg' />
+
+    <script src="Scripts/modernizer.js"></script>
+    <script src="Scripts/bankers.js"></script>
+    <script src="Scripts/menu.js"></script>
+
+    <header id='page-top'><div id='singleImageHeader' class="container headerContainer" style="background: url('Images/download.png'); padding-top: 50px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; position: relative">
+
+            <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+            <div style='display: flex; position: relative; height: 100%; width: 100%' class="row row-eq-height">
+
+                <div style="text-align: left" class="col-md-6 col-md-offset-1 headerSectionDiv" id='mainTitleSection'>
+
+                    <div class='headerContentContainer'>
+                        <h3 id='mainTitle'>Alumbrado</h3>
+                        <h6 id='mainSubtitle'>Music App</h6>
                     </div>
-                </div></div></div></div>
-        </div>
-    </div>
-</section>
-<section style='background: white;'><div class='container pageSection text-section-5 qfbwpH8DlJ7J2NFKHe1xZmjDIvjgwWx8uHGW6WcP'>
-    <div class='row'>
-        <div class='col-md-4 col-md-offset-1 outerGrid'>
-            <div class='innerGridTable'>
-                <h4 class='innerTableContent'>Welcome to the website!</h4>
+                </div>
+
+                <div style="text-align: left" class="col-md-4 pSection headerSectionDiv">
+
+                    <div class='pContainer'>
+                        <div style='display: table-cell; vertical-align: middle;'>
+                            <a id="extraHTML">
+                                <span>
+                                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                                    <span>Alumbrado</span>
+                                </span>
+                            </a>
+                            <style>
+                                #extraHTML:hover{
+                                    text-decoration: none !important;
+                                }
+                                #extraHTML{
+                                    font-size:40px;
+                                }
+                                #extraHTML span {
+                                    color: #fff;
+                                    font-size: 46px;
+                                    font-weight: bold;
+                                    letter-spacing: 4px;
+                                    margin-top: 12px;
+                                }
+                                #extraHTML i {
+                                    margin-right: 6px;
+                                    color: rgb(243, 156, 18);
+                                }
+                                #extraHTML {
+                                    height: 50px;
+                                    padding: 15px 15px;
+                                    line-height: 50px;
+                                }
+                            </style>
+
+                            <div class='row'>
+                                <div class='col-md-12'>
+                                    <style id='newsletterStyle'>
+                                        .newsLetterForm {
+                                            text-align: left;
+                                            margin-top: 30px;
+                                        }
+                                        .newsLetterForm p {
+                                            text-align: left;
+                                            font-size: 18px;
+                                        }
+                                        #subscribeButton {
+                                            color: rgb(255,255,255) !important;
+                                            background: rgb(243, 156, 18) !important;
+                                            border-color: rgb(255,255,255) !important;
+                                            border-radius: 0px !important;
+                                            margin-bottom: 10px;
+                                            margin-right: 0;
+                                        }
+                                        #subscribeButton:hover {
+                                            color: rgb(243, 156, 18) !important;
+                                            background: rgb(255,255,255) !important;
+                                            border-color: rgb(243, 156, 18) !important;
+                                        }
+                                        .newsLetterForm .input-group input, textarea {
+                                            background: rgb(255,255,255) !important;
+                                            color: rgb(0,0,0) !important;
+                                            border-radius: 0px !important;
+                                            text-transform: none !important;
+                                            border-bottom-left-radius: 0 !important;
+                                            border-top-left-radius: 0 !important;
+                                        }
+                                        .newsLetterForm .input-group input::placeholder {
+                                            color: rgb(117,117,117) !important;
+                                        }
+                                        .newsLetterForm .input-group textarea::placeholder {
+                                            color: rgb(117,117,117) !important;
+                                        }
+                                        .newsLetterForm .input-group input:-ms-input-placeholder {
+                                            color: rgb(117,117,117) !important;
+                                        }
+                                        .newsLetterForm .input-group textarea:-ms-input-placeholder {
+                                            color: rgb(117,117,117) !important;
+                                        }
+                                        .newsLetterForm .input-group input::-ms-input-placeholder {
+                                            color: rgb(117,117,117) !important;
+                                        }
+                                        .newsLetterForm .input-group textarea::-ms-input-placeholder {
+                                            color: rgb(117,117,117) !important;
+                                        }
+                                        .newsLetterForm .input-group-addon {
+                                            background: rgb(243, 156, 18) !important;
+                                            color: rgb(255,255,255) !important;
+                                            border-radius: 0;
+                                            border-top-right-radius: 0;
+                                            border-bottom-right-radius: 0;
+                                        }
+                                        .newsLetterForm .input-group-addon:first-child {
+                                            margin-left: 0;
+                                        }
+                                        .newsLetterForm {
+                                            background: rgba(0,0,0,0.75) !important;
+                                            border: none !important;
+                                            color: rgb(255,255,255) !important;
+                                            padding: 10px;
+                                            text-align: center;
+                                        }
+                                        .newsLetterForm .form-control {
+                                            border: 1px solid rgb(255,255,255);
+                                        }
+                                        .newsletterTitle {
+                                            color: rgb(255,255,255) !important;
+                                            font-size: 40px;
+                                            padding-bottom: 15px;
+                                            text-align: center;
+                                        }
+                                    </style>
+
+                                    <form class='newsLetterForm col-md-12' onsubmit="event.preventDefault(); return false;">
+                                        <h5 id='newsletterTitle' class='sectionTitle newsletterTitle'>Subscribe to Our NewsLetter</h5>
+
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i id='newsletterAddOn' class="fa fa-envelope"></i>
+                                                </span>
+
+                                                <input name="sEmail" type="email" class="form-control" id="sEmail" placeholder="Your Email" required="required"/>
+                                            </div>
+                                        </div>
+
+                                        <button onclick='subscribe()' type="submit" class="btn btn-primary" id="subscribeButton">Subscribe</button>
+                                    </form>
+
+                                    <script>
+                                        var subscribe = function() {
+                                            swal({
+                                            title: "Confirmation",
+                                            text: "Are you sure you want to subscribe to our newsletter?",
+                                            type: "info",
+                                            showCancelButton: true,
+                                            closeOnConfirm: false,
+                                            showLoaderOnConfirm: true
+                                        }, function () {
+                                            var spinner = document.createElement('div');
+                                            var outer = document.createElement('div');
+                                            outer.id = 'spinnerLoading';
+                                            spinner.className = 'spinnerLoading';
+                                            outer.style.background = 'rgba(0,0,0,0.7)';
+                                            outer.style.borderRadius = '20px';
+                                            outer.style.position = 'fixed';
+                                            outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+                                            outer.style.width = '205px';
+                                            outer.style.top = '30%';
+                                            outer.style.height = '205px';
+                                            outer.style.zIndex = '10000';
+                                            spinner.style.marginLeft = '42.5px';
+                                            spinner.style.marginTop = '42.5px';
+                                            outer.appendChild(spinner);
+                                            document.body.appendChild(outer);
+                                            if (!addedSpinner) {
+                                                addedSpinner = true;
+                                                addSpinnerStyle();
+                                            }
+                                            $.ajax({
+                                                url: 'https://heyleia.com/php/clientNewsletter.php',
+                                                data: {
+                                                    'email': document.getElementById('sEmail').value,
+                                                    'url': window.location.origin.split('//')[1]
+                                                },
+                                                type: 'POST',
+                                                success: function(data) {
+                                                    document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                                                    if (data === 'success') {
+                                                        swal("Success", "You have successfully subscribed to our newsletter!", "success");
+                                                        document.body.className = '';
+                                                    } else {
+                                                        swal("Uh Oh!", data, "error");
+                                                        document.body.className = '';
+                                                    }
+                                                },
+                                                error: function(err) {
+                                                    console.log(err);
+                                                    document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                                                    swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                                                    document.body.className = '';
+                                                }
+                                            });
+                                        });
+                                        document.body.className = '';
+                                    }
+                                    var addedSpinner = false;
+                                    var addSpinnerStyle = function() {
+                                        var style = document.createElement('style');
+                                        style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
+                                        document.body.appendChild(style);
+                                    };
+                                    </script>
+                                </div>
+                            </div>
+
+                            <br><br>
+                            <a id="shopButton" style="margin-right: 0px" class="btn btn-outline btn-xl" href="/shop">Shop</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class='col-md-6 outerGrid'>
-            <div class='innerGridTable'>
-                <p class='innerTableContent'>Get the outcomes that you merit when you request assistance from our Fantasy Music experts! This knowledge can be utilized to analyze everything necessary to always ensure a comprehensive, dignified approach to unified problem solving. Our dependable services will always work to convey everything required to get you set up in the most effective way possible.</p>
+    </header>
+
+    <section style='background: red;'>
+
+        <div class='container pageSection text-section-1 u483dhvBpO9Js5rgliBYQU5hyjHnA51xAxFXEU5i'>
+
+            <div class='row'>
+
+                <div class='col-md-4 outerGrid'>
+
+                    <div class='innerGridTable'>
+
+                        <div class='innerTableContent'>
+                            <img src='Images/download3.png'/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 outerGrid'>
+
+                    <div class='innerGridTable'>
+
+                        <div class='innerTableContent'>
+
+                            <h4>Check Us Out</h4>
+                            <p>We are one of the the top Fantasy Music solutions in the area. We have been giving high caliber, intensely evaluated Fantasy Music solutions to all who come to us for years. In that time, we have found out about client administration and the benefit of realizing our customers needs. We adore driving by ordinary and perceiving how extraordinary we can become together!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-md-4 outerGrid'>
+
+                    <div class='innerGridTable'>
+
+                        <div class='innerTableContent'>
+                            <!-- <img src='https://fakeimg.pl/500x300'/> -->
+                            <img src='Images/download4.png'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .text-section-1 img {
+                    width: 100%;
+                }
+                .text-section-1 {
+                    text-align: center;
+                }
+                .text-section-1 .col-md-4 {
+                    padding: 30px 15px;
+                }
+                .text-section-1 h4 {
+                    font-size: 40px;
+                }
+            </style>
+        </div>
+    </section>
+
+    <section style="background: url('Images/download1.png'); position: relative">
+
+        <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+
+        <style id='aboutStyle'>
+            #aboutParagraph {
+                font-size: 18px;
+                padding-bottom: 40px;
+            }
+            #aboutImage {
+                max-width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #about {
+                color: rgb(255,255,255) !important;
+            }
+            #about .sectionTitle {
+                color: rgb(255,255,255) !important;
+            }
+            #about .sectionSubtitle {
+                color: rgb(255,255,255) !important;
+            }
+            #about hr {
+                border-width: 2px;
+                border-color: rgb(255,255,255);
+                max-width: 150px;
+                margin-bottom: 30px;
+            }
+        </style>
+
+        <div class="container pageSection" id="about">
+
+            <h1 id='aboutTitle' class="sectionTitle">About</h1>
+            <h4 id='aboutSubtitle' class="sectionSubtitle">Learn more about what we do.</h4>
+            <hr>
+
+            <div id='aboutContent' style='display: flex' class="row">
+
+                <div class=''>
+                    <div class='row'>
+                        <div style='display: inline-grid; position: relative;' class='col-md-6 extraTextSectionLeft'>
+                            <div style='height: 100%; width: 100%; display: table;'>
+                                <p style='display: table-cell; vertical-align: middle;' class='aboutParagraph' id='aboutParagraph'>I didn't try filling in this paragraph for you because who knows what you do as well as you! Try replacing this paragraph with a few sentances that describe what you do, how you do it, and why you are better than everyone else. Remember that sometimes less is more, so it is ok to be brief here if you don't know what to write. The main goal is to communicate to your viewer that you can offer them some value, and encourage them to reach out to you to learn even more about what that value is! Also, feel free to look up other websites like yours online for some inspiration.</p>
+                            </div>
+                        </div>
+
+                        <div style='position: relative; padding: 0; display: inline-grid;' class='col-md-6'>
+                            <div style='height: 100%; width: 100%; display: table;'>
+                                <div style='display: table-cell; vertical-align: middle; width: 100%; height: 100%;'>
+                                    <img id='aboutImage' style='max-width: 100%; max-height: 100%;' src='Images/download4.png' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <style>
-        .text-section-5 .col-md-4 {
-            padding: 30px 15px;
-        }
-        .text-section-5 .col-md-6 {
-            padding: 30px 15px;
-        }
-        .text-section-5 h4 {
-            font-size: 40px;
-        }
-    </style>
-</div></section><section style="background: url('/img/FAdLW-cABoX-xu48S-t1FFF-EmOtq.jpeg'); position: relative;">
-    <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-    <style id='featureStyle'>
-        .featureText {
-            margin-bottom: 40px;
-        }
-        .featureIcon {
-            color: rgb(255,255,255);
-            background: rgba(0,0,0,0);
-            border-radius: 0px;
-        }
-        .featureElem {
-            color: rgb(255,255,255);
-            background: rgba(0,0,0,0);
-            border: none;
-            cursor: pointer;
-        }
-        .featureElem:hover {
-            background: rgba(0,0,0,0);
-            color: rgb(255,255,255);
-        }
-        .featureHr {
-            max-width: 100px !important;
-            margin: 15px auto !important;
-            border-width: 2px !important;
-            border-color: rgb(255,255,255) !important;
-        }
-        #features {
-            color: rgb(255,255,255) !important;
-        }
-        #features .sectionTitle {
-            color: rgb(255,255,255) !important;
-        }
-        #features .sectionSubtitle {
-            color: rgb(255,255,255) !important;
-        }
-        #features hr {
-            border-width: 2px;
-            border-color: rgb(255,255,255);
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-    </style>
-    <div class="container pageSection" id="features">
-        <h1 id='featuresTitle' class="sectionTitle">Features</h1>
-        <h4 id='featuresSubtitle' class="sectionSubtitle">Check out some of our awesome features.</h4>
-        <hr>
-        <div style='display: flex' class='row'><div class='col-md-8'><div class='row' id='featuresContent'><div class="featureElem col-md-4">
-            <i class="featureIcon fa-3x fa fa-thumbs-up"></i>
-            <h5 class="featureHeader">Quality</h5>
-            <hr class='featureHr'>
-            <p class="featureText">We always perform our projects with the utmost quality and integrity.</p>
-        </div><div class="featureElem col-md-4">
-            <i class="featureIcon fa-3x fa fa-briefcase"></i>
-            <h5 class="featureHeader">Pro</h5>
-            <hr class='featureHr'>
-            <p class="featureText">Every step of the process will be handled by our team with true professionalism.</p>
-        </div><div class="featureElem col-md-4">
-            <i class="featureIcon fa-3x fa fa-lock"></i>
-            <h5 class="featureHeader">Reliable</h5>
-            <hr class='featureHr'>
-            <p class="featureText">You can count on us to make sure your project is completed with care.</p>
-        </div></div><div class='row'><div class="featureElem col-md-4">
-            <i class="featureIcon fa-3x fa fa-user"></i>
-            <h5 class="featureHeader">Trusted</h5>
-            <hr class='featureHr'>
-            <p class="featureText">We are trusted by thousands all around the world to deliver quality work on time.</p>
-        </div><div class="featureElem col-md-4">
-            <i class="featureIcon fa-3x fa fa-globe"></i>
-            <h5 class="featureHeader">Global</h5>
-            <hr class='featureHr'>
-            <p class="featureText">The fact that our work has spread to regions all of the globe is a true indication of our quality.</p>
-        </div><div class="featureElem col-md-4">
-            <i class="featureIcon fa-3x fa fa-calendar"></i>
-            <h5 class="featureHeader">On Time</h5>
-            <hr class='featureHr'>
-            <p class="featureText">Our projects are never late. They are always completed with care and delivered on time.</p>
-        </div></div></div>
-            <div style='display: inline-grid; position: relative;' class='col-md-4'><div class='extraTextSection extraTextSectionRight' style='position: absolute; height: 100%; display: table;'><p id='featureP' style='display: table-cell; vertical-align: middle' class="descriptionText">As a leader in the Fantasy Football space, we are an imaginative group of problem solvers who are energetic about sparing our customers time, dissatisfaction, and cash. Utilizing our associations with extravagant suppliers, overall we deliver solutions explicit to our customer's exceptional needs, guaranteeing that the unlimited subtleties are dealt with and top-level specialist organizations are foreseeing your landing all throughout the adventure of working together.</p></div></div></div>
-    </div>
-</section>
-<section style="background: white; position: relative">
-    <div style='background-color: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-    <div class="container pageSection" id="testimonials">
-        <h1 id='testimonialsTitle' class="sectionTitle">Testimonials</h1>
-        <h4 id='testimonialsSubtitle' class="sectionSubtitle">Read some of our amazing testimonials.</h4>
-        <hr>
-        <style id='testimonialStyle'>
-            #testimonials hr {
+    </section>
+
+    <section style='background: darkred;'>
+        <div class='container pageSection text-section-5 qfbwpH8DlJ7J2NFKHe1xZmjDIvjgwWx8uHGW6WcP'>
+            <div class='row'>
+                <div class='col-md-4 col-md-offset-1 outerGrid'>
+                    <div class='innerGridTable'>
+                        <h4 class='innerTableContent'>Welcome to the website!</h4>
+                    </div>
+                </div>
+
+                <div class='col-md-6 outerGrid'>
+                    <div class='innerGridTable'>
+                        <p class='innerTableContent'>Get the outcomes that you merit when you request assistance from our Fantasy Music experts! This knowledge can be utilized to analyze everything necessary to always ensure a comprehensive, dignified approach to unified problem solving. Our dependable services will always work to convey everything required to get you set up in the most effective way possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .text-section-5 .col-md-4 {
+                    padding: 30px 15px;
+                }
+                .text-section-5 .col-md-6 {
+                    padding: 30px 15px;
+                }
+                .text-section-5 h4 {
+                    font-size: 40px;
+                }
+            </style>
+        </div>
+    </section>
+
+    <section style="background: url('Images/download.png'); position: relative;">
+        <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+
+        <style id='featureStyle'>
+            .featureText {
+                margin-bottom: 40px;
+            }
+            .featureIcon {
+                color: rgb(255,255,255);
+                background: rgba(0,0,0,0);
+                border-radius: 0px;
+            }
+            .featureElem {
+                color: rgb(255,255,255);
+                background: rgba(0,0,0,0);
+                border: none;
+                cursor: pointer;
+            }
+            .featureElem:hover {
+                background: rgba(0,0,0,0);
+                color: rgb(255,255,255);
+            }
+            .featureHr {
+                max-width: 100px !important;
+                margin: 15px auto !important;
+                border-width: 2px !important;
+                border-color: rgb(255,255,255) !important;
+            }
+            #features {
+                color: rgb(255,255,255) !important;
+            }
+            #features .sectionTitle {
+                color: rgb(255,255,255) !important;
+            }
+            #features .sectionSubtitle {
+                color: rgb(255,255,255) !important;
+            }
+            #features hr {
+                border-width: 2px;
+                border-color: rgb(255,255,255);
+                max-width: 150px;
+                margin-bottom: 30px;
+            }
+        </style>
+
+        <div class="container pageSection" id="features">
+            <h1 id='featuresTitle' class="sectionTitle">Features</h1>
+            <h4 id='featuresSubtitle' class="sectionSubtitle">Check out some of our awesome features.</h4>
+            <hr>
+            <div style='display: flex' class='row'>
+                <div class='col-md-8'>
+                    <div class='row' id='featuresContent'>
+                        <div class="featureElem col-md-4">
+                            <i class="featureIcon fa-3x fa fa-thumbs-up"></i>
+                            <h5 class="featureHeader">Quality</h5>
+                            <hr class='featureHr'>
+                            <p class="featureText">We always perform our projects with the utmost quality and integrity.</p>
+                        </div>
+                        <div class="featureElem col-md-4">
+                            <i class="featureIcon fa-3x fa fa-briefcase"></i>
+                            <h5 class="featureHeader">Pro</h5>
+                            <hr class='featureHr'>
+                            <p class="featureText">Every step of the process will be handled by our team with true professionalism.</p>
+                        </div>
+
+                        <div class="featureElem col-md-4">
+                            <i class="featureIcon fa-3x fa fa-lock"></i>
+                            <h5 class="featureHeader">Reliable</h5>
+                            <hr class='featureHr'>
+                            <p class="featureText">You can count on us to make sure your project is completed with care.</p>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class="featureElem col-md-4">
+                            <i class="featureIcon fa-3x fa fa-user"></i>
+                            <h5 class="featureHeader">Trusted</h5>
+                            <hr class='featureHr'>
+                            <p class="featureText">We are trusted by thousands all around the world to deliver quality work on time.</p>
+                        </div>
+
+                        <div class="featureElem col-md-4">
+                            <i class="featureIcon fa-3x fa fa-globe"></i>
+                            <h5 class="featureHeader">Global</h5>
+                            <hr class='featureHr'>
+                            <p class="featureText">The fact that our work has spread to regions all of the globe is a true indication of our quality.</p>
+                        </div>
+
+                        <div class="featureElem col-md-4">
+                            <i class="featureIcon fa-3x fa fa-calendar"></i>
+                            <h5 class="featureHeader">On Time</h5>
+                            <hr class='featureHr'>
+                            <p class="featureText">Our projects are never late. They are always completed with care and delivered on time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style='display: inline-grid; position: relative;' class='col-md-4'>
+                    <div class='extraTextSection extraTextSectionRight' style='position: absolute; height: 100%; display: table;'>
+                        <p id='featureP' style='display: table-cell; vertical-align: middle' class="descriptionText">As a leader in the Fantasy Football space, we are an imaginative group of problem solvers who are energetic about sparing our customers time, dissatisfaction, and cash. Utilizing our associations with extravagant suppliers, overall we deliver solutions explicit to our customer's exceptional needs, guaranteeing that the unlimited subtleties are dealt with and top-level specialist organizations are foreseeing your landing all throughout the adventure of working together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: blue; position: relative">
+        <div style='background-color: transparent; position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+
+        <div class="container pageSection" id="testimonials">
+            <h1 id='testimonialsTitle' class="sectionTitle">Testimonials</h1>
+            <h4 id='testimonialsSubtitle' class="sectionSubtitle">Read some of our amazing testimonials.</h4>
+            <hr>
+
+            <style id='testimonialStyle'>
+                #testimonials hr {
+                    border-width: 2px;
+                    border-color: grey;
+                    max-width: 150px;
+                    margin-bottom: 30px;
+                }
+                #quote-carousel {
+                    padding: 0 10px 30px 10px;
+                    margin-top: 30px;
+                }
+                #quote-carousel .carousel-control{
+                    background: none;
+                    color: #222;
+                    font-size: 2.3em;
+                    text-shadow: none;
+                    margin-top: 30px;
+                    width: 5%;
+                }
+                #quote-carousel .carousel-control.left {
+                    text-align: left;
+                }
+                #quote-carousel .carousel-control.right {
+                    text-align: right;
+                }
+                #quote-carousel .carousel-indicators {
+                    right: 50%;
+                    top: auto;
+                    bottom: 0px;
+                    margin-right: -19px;
+                }
+                #quote-carousel .carousel-indicators li {
+                    background: rgba(192, 192, 192, 1);
+                    width: 20px;
+                    height: 20px;
+                    margin: 1px;
+                }
+                #quote-carousel .carousel-indicators .active {
+                    background: rgba(51, 51, 51, 1);
+                }
+                #testimonials .carousel-control {
+                    color: rgba(0,0,0,0.5) !important;
+                    opacity: 1 !important;
+                }
+                #testimonials .carousel-control:hover {
+                    color: rgba(0,0,0,0.8) !important;
+                    opacity: 1 !important;
+                }
+                #quote-carousel img {
+                    width: 100px;
+                    height: 100px;
+                    border: none;
+                    border-rounded: 50px;
+                }
+                .item blockquote {
+                    border-left: none;
+                    margin: 0;
+                }
+                .item blockquote img {
+                    margin-bottom: 10px;
+                }
+                .item p {
+                    text-align: left;
+                    padding: 0px 30px;
+                    color: rgba(0,0,0,1)
+                }
+                .item small {
+                    text-align: left;
+                    padding: 0px 30px;
+                    color: grey
+                }
+                .item blockquote p:before {
+                    float: left;
+                    margin-right: 10px;
+                }
+                @media (min-width: 800px) {
+                    #quote-carousel {
+                        margin-bottom: 0;
+                        padding: 0 40px 30px 40px;
+                    }
+                }
+                @media (max-width: 800px) {
+                    #quote-carousel .carousel-indicators {
+                        bottom: -20px !important;
+                    }
+                    #quote-carousel .carousel-indicators li {
+                        display: inline-block;
+                        margin: 0px 5px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    #quote-carousel .carousel-indicators li.active {
+                        margin: 0px 5px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            </style>
+
+            <div class='row' style='display: flex'>
+                <div class='col-md-10 col-md-offset-1'>
+                    <div class='carousel slide' data-ride='carousel' id='quote-carousel'>
+                        <ol class='carousel-indicators'>
+                            <li data-target='#quote-carousel' data-slide-to='0' class='dataDot active'></li>
+                            <li data-target='#quote-carousel' data-slide-to='1' class='dataDot'></li>
+                            <li data-target='#quote-carousel' data-slide-to='2' class='dataDot'></li>
+                        </ol>
+
+                        <div class='carousel-inner'>
+                            <div class='item active'>
+                                <blockquote>
+                                    <div class='row'>
+                                        <div class='col-md-3 text-center'>
+                                            <img class='img-circle' src=Images/download5.png>
+                                        </div>
+
+                                        <div class=''>
+                                            <p>The experience of working with these guys was fantastic. Couldn't have asked for a smoother transition.</p>
+                                            <small>Ellie</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class='item'>
+                                <blockquote>
+                                    <div class='row'>
+                                        <div class='col-md-3 text-center'>
+                                            <img class='img-circle' src=Images/download6.png>
+                                        </div>
+
+                                        <div class=''>
+                                            <p>Unbelievable job. Very glad I chose to reach out to these guys to learn more. I recommend you do the same.</p>
+                                            <small>Shaun</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+
+                            <div class='item'>
+                                <blockquote>
+                                    <div class='row'>
+                                        <div class='col-md-3 text-center'>
+                                            <img class='img-circle' src=Images/download7.png>
+                                        </div>
+
+                                        <div class=''>
+                                            <p>Such a pleasure working with the team here. 11 out of 10 EASY! You should definitely get in touch with them.</p>
+                                            <small>Mark</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <a data-slide='prev' href='#quote-carousel' class='left carousel-control'>
+                                <i class='fa fa-chevron-left'></i>
+                            </a>
+                            <a data-slide='next' href='#quote-carousel' class='right carousel-control'>
+                                <i class='fa fa-chevron-right'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var testimonialHeights = [];
+                var itemHeights = [];
+                $(document).ready(function() {
+
+                    if (window.self === window.top) {
+                        var heightInterval = setInterval(function() {
+                            var height1 = document.getElementById('testimonials').offsetHeight;
+                            var height2 = document.getElementsByClassName('item active')[0].offsetHeight;
+                            testimonialHeights.push(height1);
+                            itemHeights.push(height2);
+
+                            if (testimonialHeights.length === document.getElementsByClassName('carousel-inner')[0].getElementsByClassName('item').length * 2) {
+                                var maxHeight1 = 0;
+                                var maxHeight2 = 0;
+
+                                for (var i = 0; i < testimonialHeights.length; i++) {
+                                    if (testimonialHeights[i] > maxHeight1) {
+                                        maxHeight1 = testimonialHeights[i];
+                                    }
+                                    if (itemHeights[i] > maxHeight2) {
+                                        maxHeight2 = itemHeights[i];
+                                    }
+                                }
+
+                                document.getElementById('testimonials').style.height = maxHeight1.toString() + 'px';
+                                $('.item').css('height', maxHeight2.toString() + 'px');
+                                clearInterval(heightInterval);
+                            }
+                        }, 2000);
+
+                        $('#quote-carousel').carousel({
+                            pause: true,
+                            interval: 4000,
+                        });
+                    } else {
+                        setInterval(function() {
+                            $('#quote-carousel').carousel('pause');
+                        }, 5000);
+                    }
+                });
+            </script>
+        </div>
+    </section>
+
+    <section style="background: url('Images/download.png'); position: relative">
+        <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+
+        <style id='teamStyle'>
+            .teamItem {
+                margin-bottom: 40px;
+            }
+            .teamImage {
+                width: 100%;
+            }
+            .teamItem a {
+                cursor: pointer;
+            }
+            #team {
+                color: rgb(255,255,255) !important;
+            }
+            #team .sectionTitle {
+                color: rgb(255,255,255) !important;
+            }
+            #team .sectionSubtitle {
+                color: rgb(255,255,255) !important;
+            }
+            #team hr {
+                border-width: 2px;
+                border-color: rgb(255,255,255);
+                max-width: 150px;
+                margin-bottom: 30px;
+            }
+        </style>
+
+        <div class="container pageSection" id="team">
+            <h1 id='teamTitle' class="sectionTitle">Team</h1>
+            <h4 id='teamSubtitle' class="sectionSubtitle">Meet the team behind it all.</h4>
+            <hr>
+            <div class='row' style='display: flex'>
+                <div class='col-md-10 col-md-offset-1'>
+                    <div class='row' id='teamContent'><div class="teamItem col-md-3">
+                        <div>
+                            <img class='teamImage' src='Images/download5.png' />
+                        </div>
+                        <h5 class='teamHeader'>Lionel Messi</h5>
+                        <p class='teamInfo'>CEO and Founder</p>
+                        <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://google.com" style="font-size: 30px;">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </div>
+                        <div class="teamItem col-md-3">
+                            <div>
+                                <img class='teamImage' src='Images/download6.png' />
+                            </div>
+                            <h5 class='teamHeader'>Cristiano Ronaldo</h5>
+                            <p class='teamInfo'>CFO and Head of Sales</p>
+                            <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://google.com" style="font-size: 30px;">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </div>
+                        <div class="teamItem col-md-3">
+                            <div>
+<!--                                <img class='teamImage' src='https://imgplaceholder.com/250x300/' />-->
+                                    <img class="teamImage" src="Images/download7.png">
+                            </div>
+
+                            <h5 class='teamHeader'>Gerard Pique</h5>
+                            <p class='teamInfo'>CTO and Lead Developer</p>
+                            <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://google.com" style="font-size: 30px;">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </div>
+                        <div class="teamItem col-md-3">
+                            <div>
+                                <img class='teamImage' src='Images/download4.png' />
+                            </div>
+                            <h5 class='teamHeader'>Team Member 4</h5>
+                            <p class='teamInfo'>CMO and Head of Design</p>
+                            <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://google.com" style="font-size: 30px;">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: white; position: relative">
+        <div style='background-color: transparent; position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+        <div class="container pageSection" id="blog">
+            <h1 id='blogTitle' class="sectionTitle">Blog</h1>
+            <h4 id='blogSubtitle' class="sectionSubtitle">Check out our latest posts.</h4>
+            <hr>
+            <div class="row">
+                <div id='blogContent'></div>
+            </div>
+        </div>
+
+        <style id='blogStyle'>
+            #blog hr {
                 border-width: 2px;
                 border-color: grey;
                 max-width: 150px;
                 margin-bottom: 30px;
             }
-            #quote-carousel {
-                padding: 0 10px 30px 10px;
-                margin-top: 30px;
+            .commentButton {
+                color: rgb(255,255,255) !important;
+                background: rgb(243, 156, 18) !important;
+                border-color: rgb(255,255,255) !important;
+                border-radius: 0px !important;
             }
-            #quote-carousel .carousel-control{
-                background: none;
-                color: #222;
-                font-size: 2.3em;
-                text-shadow: none;
-                margin-top: 30px;
-                width: 5%;
+            .commentButton:hover {
+                color: rgb(243, 156, 18) !important;
+                background: rgb(255,255,255) !important;
+                border-color: rgb(243, 156, 18) !important;
             }
-            #quote-carousel .carousel-control.left {
-                text-align: left;
+            #blog textarea {
+                background: rgb(255,255,255) !important;
+                color: rgb(0,0,0) !important;
+                border-radius: 0px !important;
+                text-transform: none !important;
+                border-bottom-left-radius: 0 !important;
+                border-top-left-radius: 0 !important;
             }
-            #quote-carousel .carousel-control.right {
-                text-align: right;
+            #blog textarea::placeholder {
+                color: rgb(117,117,117) !important;
             }
-            #quote-carousel .carousel-indicators {
-                right: 50%;
-                top: auto;
-                bottom: 0px;
-                margin-right: -19px;
-            }
-            #quote-carousel .carousel-indicators li {
-                background: rgba(192, 192, 192, 1);
-                width: 20px;
-                height: 20px;
-                margin: 1px;
-            }
-            #quote-carousel .carousel-indicators .active {
-                background: rgba(51, 51, 51, 1);
-            }
-            #testimonials .carousel-control {
-                color: rgba(0,0,0,0.5) !important;
-                opacity: 1 !important;
-            }
-            #testimonials .carousel-control:hover {
-                color rgba(0,0,0,0.8) !important;
-                opacity: 1 !important;
-            }
-            #quote-carousel img {
-                width: 100px;
-                height: 100px;
-                border: none;
-                border-rounded: 50px;
-            }
-            .item blockquote {
-                border-left: none;
-                margin: 0;
-            }
-            .item blockquote img {
-                margin-bottom: 10px;
-            }
-            .item p {
-                text-align: left;
-                padding: 0px 30px;
-                color: rgba(0,0,0,1)
-            }
-            .item small {
-                text-align: left;
-                padding: 0px 30px;
-                color: grey
-            }
-            .item blockquote p:before {
-                float: left;
-                margin-right: 10px;
-            }
-            @media (min-width: 800px) {
-                #quote-carousel {
-                    margin-bottom: 0;
-                    padding: 0 40px 30px 40px;
-                }
-            }
-            @media (max-width: 800px) {
-                #quote-carousel .carousel-indicators {
-                    bottom: -20px !important;
-                }
-                #quote-carousel .carousel-indicators li {
-                    display: inline-block;
-                    margin: 0px 5px;
-                    width: 20px;
-                    height: 20px;
-                }
-                #quote-carousel .carousel-indicators li.active {
-                    margin: 0px 5px;
-                    width: 20px;
-                    height: 20px;
-                }
+            #blog textarea::-ms-input-placeholder {
+                color: rgb(117,117,117) !important;
             }
         </style>
-        <div class='row' style='display: flex'><div class='col-md-10 col-md-offset-1'>
-            <div class='carousel slide' data-ride='carousel' id='quote-carousel'>
-                <ol class='carousel-indicators'>
-                    <li data-target='#quote-carousel' data-slide-to='0' class='dataDot active'></li><li data-target='#quote-carousel' data-slide-to='1' class='dataDot'></li><li data-target='#quote-carousel' data-slide-to='2' class='dataDot'></li>
-                </ol>
-                <div class='carousel-inner'>
-                    <div class='item active'>
-                        <blockquote>
-                            <div class='row'>
-                                <div class='col-md-3 text-center'>
-                                    <img class='img-circle' src=/img/EV9bk-JnPEY-TE9kL-yawuY-z5e3h.png>
+
+        <script src="Scripts/blog.js"></script>
+        <link href="Stylesheets/blog.css" rel="stylesheet">
+    </section>
+
+    <section style="background: url('Images/download1.png'); position: relative">
+        <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
+        <div class="container pageSection" id="contact">
+            <h1 id='contactTitle' class="sectionTitle">Contact</h1>
+            <h4 id='contactSubtitle'class="sectionSubtitle">Send us a message using the form below.</h4>
+            <hr>
+            <div class="row">
+                <div class='col-md-12'><div class='row'>
+                    <div class='col-md-6'>
+                        <div class="contactDetails">
+                            <div>
+                                <h4>Get In Touch</h4>
+                                <div>
+                                    <div>
+                                        <i class="fa fa-phone"></i>
+                                        <span>Telephone:</span>
+                                        <span>+1 123 456 7890</span>
+                                    </div>
                                 </div>
-                                <div class=''>
-                                    <p>The experience of working with these guys was fantastic. Couldn't have asked for a smoother transition.</p>
-                                    <small>Ellie</small>
+
+                                <div>
+                                    <div>
+                                        <i class="fa fa-envelope"></i>
+                                        <span>Mail:</span>
+                                        <span>your@email.com</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <i class="fa fa-map-marker"></i>
+                                        <span>Location:</span>
+                                        <span>TBD<br>Johnston, RI</span>
+                                    </div>
                                 </div>
                             </div>
-                        </blockquote>
-                    </div><div class='item'>
-                    <blockquote>
-                        <div class='row'>
-                            <div class='col-md-3 text-center'>
-                                <img class='img-circle' src=/img/jPzPL-WUhWv-HgZXk-xqowR-zlrlV.png>
-                            </div>
-                            <div class=''>
-                                <p>Unbelievable job. Very glad I chose to reach out to these guys to learn more. I recommend you do the same.</p>
-                                <small>Shaun</small>
-                            </div>
+
+                            <style>
+                                .contactDetails {
+                                    padding: 20px;
+                                }
+                                .contactDetails div div div {
+                                    padding: 12px;
+                                    font-size: 18px;
+                                }
+                                .contactDetails i {
+                                    margin-right: 10px;
+                                    background: black;
+                                    color: white;
+                                    border-radius: 20px;
+                                    padding: 5px;
+                                }
+                            </style>
                         </div>
-                    </blockquote>
-                </div><div class='item'>
-                    <blockquote>
-                        <div class='row'>
-                            <div class='col-md-3 text-center'>
-                                <img class='img-circle' src=/img/0NHOj-eFIcQ-HAa9S-qkkOY-YdWOK.png>
+                    </div>
+
+                    <div class='col-md-6'>
+                        <style id='contactStyle1'>
+                            .contactForm {
+                                text-align: left;
+                                margin-top: 30px;
+                            }
+                            .contactDetails p {
+                                text-align: left;
+                                font-size: 18px;
+                            }
+                            .textarea-group {
+                                width: 100%;
+                            }
+                        </style>
+
+                        <form class='contactForm col-md-12' onsubmit="event.preventDefault(); return false;">
+                            <div class="form-group">
+                                <label id='contactFormNameLabel' for="name">Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i id='nameAddOn' class="fa fa-envelope"></i>
+                                    </span>
+
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="required"/>
+                                </div>
                             </div>
-                            <div class=''>
-                                <p>Such a pleasure working with the team here. 11 out of 10 EASY! You should definitely get in touch with them.</p>
-                                <small>Mark</small>
+                            <div class="form-group">
+                                <label id='contactFormEmailLabel' for="email">Email Address</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i id='emailAddOn' class="fa fa-envelope"></i>
+                                    </span>
+
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required="required"/>
+                                </div>
                             </div>
-                        </div>
-                    </blockquote>
+
+                            <div class="form-group">
+                                <label id='contactFormSubjectLabel' for="subject">Subject</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i id='subjectAddOn' class="fa fa-envelope"></i>
+                                    </span>
+
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="required"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label id='contactFormMessageLabel' for="subject">Message</label>
+                                <div class="input-group textarea-group">
+                                    <textarea name="message" id="message" class="form-control" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <button onclick='submitMessage()' type="submit" class="btn btn-primary" id="contactButton">Send Message</button>
+                        </form>
+                        <script>
+                            var addedSpinner = false;
+                            var submitMessage = function() {
+                                swal({
+                                    title: "Confirmation",
+                                    text: "Are you sure you want to submit this message?",
+                                    type: "info",
+                                    showCancelButton: true,
+                                    closeOnConfirm: false,
+                                    showLoaderOnConfirm: true
+                                }, function () {
+                                    var spinner = document.createElement('div');
+                                    var outer = document.createElement('div');
+                                    outer.id = 'spinnerLoading';
+                                    spinner.className = 'spinnerLoading';
+                                    outer.style.background = 'rgba(0,0,0,0.7)';
+                                    outer.style.borderRadius = '20px';
+                                    outer.style.position = 'fixed';
+                                    outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+                                    outer.style.width = '205px';
+                                    outer.style.top = '30%';
+                                    outer.style.height = '205px';
+                                    outer.style.zIndex = '10000';
+                                    spinner.style.marginLeft = '42.5px';
+                                    spinner.style.marginTop = '42.5px';
+                                    outer.appendChild(spinner);
+                                    document.body.appendChild(outer);
+                                    if (!addedSpinner) {
+                                        addedSpinner = true;
+                                        addSpinnerStyle();
+                                    }
+
+                                    var dataObj = {}
+                                    if (document.getElementById('name')) {
+                                        dataObj['name'] = document.getElementById('name').value;
+                                    }
+                                    if (document.getElementById('email')) {
+                                        dataObj['email'] = document.getElementById('email').value;
+                                    }
+                                    if (document.getElementById('phone')) {
+                                        dataObj['phone'] = document.getElementById('phone').value;
+                                    }
+                                    if (document.getElementById('company')) {
+                                        dataObj['company'] = document.getElementById('company').value;
+                                    }
+                                    if (document.getElementById('street')) {
+                                        dataObj['street'] = document.getElementById('street').value;
+                                    }
+                                    if (document.getElementById('city')) {
+                                        dataObj['city'] = document.getElementById('city').value;
+                                    }
+                                    if (document.getElementById('state')) {
+                                        dataObj['state'] = document.getElementById('state').value;
+                                    }
+                                    if (document.getElementById('subject')) {
+                                        dataObj['subject'] = document.getElementById('subject').value;
+                                    }
+                                    if (document.getElementById('message')) {
+                                        dataObj['message'] = document.getElementById('message').value;
+                                    }
+                                    $.ajax({
+                                        url: 'https://heyleia.com/php/clientContact.php',
+                                        data: dataObj,
+                                        type: 'POST',
+                                        success: function(data) {
+                                            document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                                            if (data === 'success') {
+                                                swal("Success", "You have successfully submitted your message! We will contact you at our earliest convenience.", "success");
+                                                document.body.className = '';
+                                            } else {
+                                                swal("Uh Oh!", data, "error");
+                                                document.body.className = '';
+                                            }
+                                        },
+                                        error: function(err) {
+                                            console.log(err);
+                                            document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                                            swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                                            document.body.className = '';
+                                        }
+                                    });
+                                });
+                                document.body.className = '';
+                            }
+                            var addSpinnerStyle = function() {
+                                var style = document.createElement('style');
+                                style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
+                                document.body.appendChild(style);
+                            };
+                            var addedSpinner = false;
+                            var addSpinnerStyle = function() {
+                                var style = document.createElement('style');
+                                style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
+                                document.body.appendChild(style);
+                            };
+                        </script>
+                    </div>
                 </div>
-                    <a data-slide='prev' href='#quote-carousel' class='left carousel-control'><i class='fa fa-chevron-left'></i></a>
-                    <a data-slide='next' href='#quote-carousel' class='right carousel-control'><i class='fa fa-chevron-right'></i></a>
                 </div>
             </div>
         </div>
-        </div>
-        <script>
-            var testimonialHeights = [];
-            var itemHeights = [];
-            $(document).ready(function() {
-                if (window.self === window.top) {
-                    var heightInterval = setInterval(function() {
-                        var height1 = document.getElementById('testimonials').offsetHeight;
-                        var height2 = document.getElementsByClassName('item active')[0].offsetHeight;
-                        testimonialHeights.push(height1);
-                        itemHeights.push(height2);
-                        if (testimonialHeights.length === document.getElementsByClassName('carousel-inner')[0].getElementsByClassName('item').length * 2) {
-                            var maxHeight1 = 0;
-                            var maxHeight2 = 0;
-                            for (var i = 0; i < testimonialHeights.length; i++) {
-                                if (testimonialHeights[i] > maxHeight1) {
-                                    maxHeight1 = testimonialHeights[i];
-                                }
-                                if (itemHeights[i] > maxHeight2) {
-                                    maxHeight2 = itemHeights[i];
-                                }
-                            }
-                            document.getElementById('testimonials').style.height = maxHeight1.toString() + 'px';
-                            $('.item').css('height', maxHeight2.toString() + 'px');
-                            clearInterval(heightInterval);
-                        }
-                    }, 2000);
-                    $('#quote-carousel').carousel({
-                        pause: true,
-                        interval: 4000,
-                    });
-                } else {
-                    setInterval(function() {
-                        $('#quote-carousel').carousel('pause');
-                    }, 5000);
-                }
-            });
-        </script>
-    </div>
-</section>
-<section style="background: url('/img/EPFHL-G5i5F-tW9M8-XX2EE-5uNel.jpeg'); position: relative">
-    <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-    <style id='teamStyle'>
-        .teamItem {
-            margin-bottom: 40px;
-        }
-        .teamImage {
-            width: 100%;
-        }
-        .teamItem a {
-            cursor: pointer;
-        }
-        #team {
-            color: rgb(255,255,255) !important;
-        }
-        #team .sectionTitle {
-            color: rgb(255,255,255) !important;
-        }
-        #team .sectionSubtitle {
-            color: rgb(255,255,255) !important;
-        }
-        #team hr {
-            border-width: 2px;
-            border-color: rgb(255,255,255);
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-    </style>
-    <div class="container pageSection" id="team">
-        <h1 id='teamTitle' class="sectionTitle">Team</h1>
-        <h4 id='teamSubtitle' class="sectionSubtitle">Meet the team behind it all.</h4>
-        <hr>
-        <div class='row' style='display: flex'>
-            <div class='col-md-10 col-md-offset-1'><div class='row' id='teamContent'><div class="teamItem col-md-3">
-                <div>
-                    <img class='teamImage' src='https://imgplaceholder.com/250x300/' />
-                </div>
-                <h5 class='teamHeader'>Team Member 1</h5>
-                <p class='teamInfo'>CEO and Founder</p>
-                <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-facebook"></i></a><a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-twitter"></i></a><a href="https://google.com" style="font-size: 30px;"><i class="fab fa-google-plus"></i></a>
-            </div><div class="teamItem col-md-3">
-                <div>
-                    <img class='teamImage' src='https://imgplaceholder.com/250x300/' />
-                </div>
-                <h5 class='teamHeader'>Team Member 2</h5>
-                <p class='teamInfo'>CFO and Head of Sales</p>
-                <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-facebook"></i></a><a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-twitter"></i></a><a href="https://google.com" style="font-size: 30px;"><i class="fab fa-google-plus"></i></a>
-            </div><div class="teamItem col-md-3">
-                <div>
-                    <img class='teamImage' src='https://imgplaceholder.com/250x300/' />
-                </div>
-                <h5 class='teamHeader'>Team Member 3</h5>
-                <p class='teamInfo'>CTO and Lead Developer</p>
-                <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-facebook"></i></a><a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-twitter"></i></a><a href="https://google.com" style="font-size: 30px;"><i class="fab fa-google-plus"></i></a>
-            </div><div class="teamItem col-md-3">
-                <div>
-                    <img class='teamImage' src='https://imgplaceholder.com/250x300/' />
-                </div>
-                <h5 class='teamHeader'>Team Member 4</h5>
-                <p class='teamInfo'>CMO and Head of Design</p>
-                <a href="https://facebook.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-facebook"></i></a><a href="https://twitter.com" style="margin-right: 20px; font-size: 30px;"><i class="fab fa-twitter"></i></a><a href="https://google.com" style="font-size: 30px;"><i class="fab fa-google-plus"></i></a>
-            </div></div></div></div>
-    </div>
-</section>
-<section style="background: white; position: relative">
-    <div style='background-color: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-    <div class="container pageSection" id="blog">
-        <h1 id='blogTitle' class="sectionTitle">Blog</h1>
-        <h4 id='blogSubtitle' class="sectionSubtitle">Check out our latest posts.</h4>
-        <hr>
-        <div class="row">
-            <div id='blogContent'></div>
-        </div>
-    </div>
-    <style id='blogStyle'>
-        #blog hr {
-            border-width: 2px;
-            border-color: grey;
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-        .commentButton {
-            color: rgb(255,255,255) !important;
-            background: rgb(243, 156, 18) !important;
-            border-color: rgb(255,255,255) !important;
-            border-radius: 0px !important;
-        }
-        .commentButton:hover {
-            color: rgb(243, 156, 18) !important;
-            background: rgb(255,255,255) !important;
-            border-color: rgb(243, 156, 18) !important;
-        }
-        #blog textarea {
-            background: rgb(255,255,255) !important;
-            color: rgb(0,0,0) !important;
-            border-radius: 0px !important;
-            text-transform: none !important;
-            border-bottom-left-radius: 0 !important;
-            border-top-left-radius: 0 !important;
-        }
-        #blog textarea::placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        #blog textarea::-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-    </style>
-    <script src="/blogs/blog.js"></script>
-    <link href="/blogs/blog.css" rel="stylesheet"></script>
+
+        <style id='contactStyle2'>
+            #contact {
+                color: rgb(255,255,255) !important;
+            }
+            #contact .sectionTitle {
+                color: rgb(255,255,255) !important;
+            }
+            #contact .sectionSubtitle {
+                color: rgb(255,255,255) !important;
+            }
+            #contact hr {
+                border-width: 2px;
+                border-color: rgb(255,255,255);
+                max-width: 150px;
+                margin-bottom: 30px;
+            }
+            #contactButton {
+                color: rgb(255,255,255) !important;
+                background: rgb(243, 156, 18) !important;
+                border-color: rgb(255,255,255) !important;
+                border-radius: 0px !important;
+            }
+            #contactButton:hover {
+                color: rgb(243, 156, 18) !important;
+                background: rgb(255,255,255) !important;
+                border-color: rgb(243, 156, 18) !important;
+            }
+            .contactForm .input-group input, textarea {
+                background: rgb(255,255,255) !important;
+                color: rgb(0,0,0) !important;
+                border-radius: 0px !important;
+                text-transform: none !important;
+                border-bottom-left-radius: 0 !important;
+                border-top-left-radius: 0 !important;
+            }
+            .contactForm .input-group input::placeholder {
+                color: rgb(117,117,117) !important;
+            }
+            .contactForm .input-group textarea::placeholder {
+                color: rgb(117,117,117) !important;
+            }
+            .contactForm .input-group input:-ms-input-placeholder {
+                color: rgb(117,117,117) !important;
+            }
+            .contactForm .input-group textarea:-ms-input-placeholder {
+                color: rgb(117,117,117) !important;
+            }
+            .contactForm .input-group input::-ms-input-placeholder {
+                color: rgb(117,117,117) !important;
+            }
+            .contactForm .input-group textarea::-ms-input-placeholder {
+                color: rgb(117,117,117) !important;
+            }
+            .contactForm .input-group-addon {
+                background: rgb(243, 156, 18) !important;
+                color: rgb(255,255,255) !important;
+                border-radius: 0px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .contactForm .input-group-addon:first-child {
+                margin-left: 0px;
+            }
+            .contactForm {
+                background: rgba(0,0,0,0) !important;
+                border: none !important;
+                color: rgb(255,255,255) !important;
+                padding: 20px 10px;
+                margin-bottom: 50px;
+            }
+            .contactForm .form-control {
+                border: 1px solid rgb(255,255,255);
+            }
+        </style>
     </section>
-    <section style="background: url('/img/or2ZT-oNDZx-yrDFY-Q99PK-3WOoB.jpeg'); position: relative">
-        <div style='background-color: rgba(0,0,0,0.4); position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></div>
-        <div class="container pageSection" id="contact">
-        <h1 id='contactTitle' class="sectionTitle">Contact</h1>
-        <h4 id='contactSubtitle'class="sectionSubtitle">Send us a message using the form below.</h4>
-    <hr>
-    <div class="row">
-        <div class='col-md-12'><div class='row'><div class='col-md-6'>
-        <div class="contactDetails">
-        <div>
-        <h4>Get In Touch</h4>
-    <div>
-    <div>
-    <i class="fa fa-phone"></i> <span>Telephone:</span> <span>+1 123 456 7890</span>
-    </div>
-    </div>
-    <div>
-    <div>
-    <i class="fa fa-envelope"></i> <span>Mail:</span> <span>your@email.com</span>
-    </div>
-    </div>
-    <div>
-    <div>
-    <i class="fa fa-map-marker"></i> <span>Location:</span> <span>TBD<br>Johnston, RI</span>
-    </div>
-    </div>
-    </div>
-    <style>
-    .contactDetails {
-        padding: 20px;
-    }
-    .contactDetails div div div {
-        padding: 12px;
-        font-size: 18px;
-    }
-    .contactDetails i {
-        margin-right: 10px;
-        background: black;
-        color: white;
-        border-radius: 20px;
-        padding: 5px;
-    }
-    </style>
-    </div>
-    </div>
-    <div class='col-md-6'>
-        <style id='contactStyle1'>
-    .contactForm {
-        text-align: left;
-        margin-top: 30px;
-    }
-    .contactDetails p {
-        text-align: left;
-        font-size: 18px;
-    }
-    .textarea-group {
-        width: 100%;
-    }
-    </style>
-    <form class='contactForm col-md-12' onsubmit="event.preventDefault(); return false;">
-        <div class="form-group">
-        <label id='contactFormNameLabel' for="name">Name</label>
-        <div class="input-group">
-        <span class="input-group-addon"><i id='nameAddOn' class="fa fa-envelope"></i></span>
-    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="required"/>
-        </div>
-        </div><div class="form-group">
-        <label id='contactFormEmailLabel' for="email">Email Address</label>
-    <div class="input-group">
-        <span class="input-group-addon"><i id='emailAddOn' class="fa fa-envelope"></i></span>
-    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required="required"/>
-        </div>
-        </div><div class="form-group">
-        <label id='contactFormSubjectLabel' for="subject">Subject</label>
-        <div class="input-group">
-        <span class="input-group-addon"><i id='subjectAddOn' class="fa fa-envelope"></i></span>
-    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="required"/>
-        </div>
-        </div><div class="form-group">
-        <label id='contactFormMessageLabel' for="subject">Message</label>
-        <div class="input-group textarea-group">
-        <textarea name="message" id="message" class="form-control" required="required" placeholder="Message"></textarea>
-        </div>
-        </div>
-        <button onclick='submitMessage()' type="submit" class="btn btn-primary" id="contactButton">Send Message</button>
-    </form>
-    <script>
-    var addedSpinner = false;
-    var submitMessage = function() {
-        swal({
-            title: "Confirmation",
-            text: "Are you sure you want to submit this message?",
-            type: "info",
-            showCancelButton: true,
-            closeOnConfirm: false,
-            showLoaderOnConfirm: true
-        }, function () {
-            var spinner = document.createElement('div');
-            var outer = document.createElement('div');
-            outer.id = 'spinnerLoading';
-            spinner.className = 'spinnerLoading';
-            outer.style.background = 'rgba(0,0,0,0.7)';
-            outer.style.borderRadius = '20px';
-            outer.style.position = 'fixed';
-            outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
-            outer.style.width = '205px';
-            outer.style.top = '30%';
-            outer.style.height = '205px';
-            outer.style.zIndex = '10000';
-            spinner.style.marginLeft = '42.5px';
-            spinner.style.marginTop = '42.5px';
-            outer.appendChild(spinner);
-            document.body.appendChild(outer);
-            if (!addedSpinner) {
-                addedSpinner = true;
-                addSpinnerStyle();
-            }
-            var dataObj = {}
-            if (document.getElementById('name')) {
-                dataObj['name'] = document.getElementById('name').value;
-            }
-            if (document.getElementById('email')) {
-                dataObj['email'] = document.getElementById('email').value;
-            }
-            if (document.getElementById('phone')) {
-                dataObj['phone'] = document.getElementById('phone').value;
-            }
-            if (document.getElementById('company')) {
-                dataObj['company'] = document.getElementById('company').value;
-            }
-            if (document.getElementById('street')) {
-                dataObj['street'] = document.getElementById('street').value;
-            }
-            if (document.getElementById('city')) {
-                dataObj['city'] = document.getElementById('city').value;
-            }
-            if (document.getElementById('state')) {
-                dataObj['state'] = document.getElementById('state').value;
-            }
-            if (document.getElementById('subject')) {
-                dataObj['subject'] = document.getElementById('subject').value;
-            }
-            if (document.getElementById('message')) {
-                dataObj['message'] = document.getElementById('message').value;
-            }
-            $.ajax({
-                url: 'https://heyleia.com/php/clientContact.php',
-                data: dataObj,
-                type: 'POST',
-                success: function(data) {
-                    document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
-                    if (data === 'success') {
-                        swal("Success", "You have successfully submitted your message! We will contact you at our earliest convenience.", "success");
-                        document.body.className = '';
-                    } else {
-                        swal("Uh Oh!", data, "error");
-                        document.body.className = '';
-                    }
-                },
-                error: function(err) {
-                    console.log(err);
-                    document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
-                    swal("Uh Oh!", "There was a problem. Please try again later.", "error");
-                    document.body.className = '';
-                }
-            });
-        });
-        document.body.className = '';
-    }
-    var addSpinnerStyle = function() {
-        var style = document.createElement('style');
-        style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
-        document.body.appendChild(style);
-    };
-    var addedSpinner = false;
-    var addSpinnerStyle = function() {
-        var style = document.createElement('style');
-        style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
-        document.body.appendChild(style);
-    };
-    </script>
-    </div></div></div>
-    </div>
-    </div>
-    <style id='contactStyle2'>
-        #contact {
-            color: rgb(255,255,255) !important;
-        }
-        #contact .sectionTitle {
-            color: rgb(255,255,255) !important;
-        }
-        #contact .sectionSubtitle {
-            color: rgb(255,255,255) !important;
-        }
-        #contact hr {
-            border-width: 2px;
-            border-color: rgb(255,255,255);
-            max-width: 150px;
-            margin-bottom: 30px;
-        }
-        #contactButton {
-            color: rgb(255,255,255) !important;
-            background: rgb(243, 156, 18) !important;
-            border-color: rgb(255,255,255) !important;
-            border-radius: 0px !important;
-        }
-        #contactButton:hover {
-            color: rgb(243, 156, 18) !important;
-            background: rgb(255,255,255) !important;
-            border-color: rgb(243, 156, 18) !important;
-        }
-        .contactForm .input-group input, textarea {
-            background: rgb(255,255,255) !important;
-            color: rgb(0,0,0) !important;
-            border-radius: 0px !important;
-            text-transform: none !important;
-            border-bottom-left-radius: 0 !important;
-            border-top-left-radius: 0 !important;
-        }
-        .contactForm .input-group input::placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .contactForm .input-group textarea::placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .contactForm .input-group input:-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .contactForm .input-group textarea:-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .contactForm .input-group input::-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .contactForm .input-group textarea::-ms-input-placeholder {
-            color: rgb(117,117,117) !important;
-        }
-        .contactForm .input-group-addon {
-            background: rgb(243, 156, 18) !important;
-            color: rgb(255,255,255) !important;
-            border-radius: 0px;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        .contactForm .input-group-addon:firstChild {
-            margin-left: 0px;
-        }
-        .contactForm {
-            background: rgba(0,0,0,0) !important;
-            border: none !important;
-            color: rgb(255,255,255) !important;
-            padding: 20px 10px;
-            margin-bottom: 50px;
-        }
-        .contactForm .form-control {
-            border: 1px solid rgb(255,255,255);
-        }
-    </style>
-</section>
-<footer>
-    <p id='footerText'>&copy; Alumbrado 2019. All Rights Reserved.</p>
-</footer>
+
+    <footer>
+        <p id='footerText'>&copy; Alumbrado 2019. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 <script id='generalJS'>
-    $(window).scrollspy({
-        target: ".navbar-fixed-top",
-        offset: 100
-    });
-    $("#mainNav").affix({
-        offset: {
-            top: 50
-        }
-    });$('#trigger-overlay').click(function() {
-        if (window.parent !== window.self) {
-            if (window.parent['isInMobileApp']) {
-                document.getElementById('menuOverlaySection').style.height = window.parent.document.getElementById('pageFrame').offsetHeight.toString() + 'px';
-            } else {
-                document.getElementById('menuOverlaySection').style.height = '100%';
-            }
-        } else {
-            document.getElementById('menuOverlaySection').style.height = '100%';
-        }
-    });
-    $('.menuItem').click(function() {
-        if (window.self == window.top) {
-            document.getElementsByClassName('overlay-close')[0].click();
-        }
-    });
-    $(document).on('click', 'a.page-scroll', function(event) {
-        var anchor = $(this);
-        if (anchor.length > 0) {
-            anchor = anchor[0];
-        }
-        $('html, body').stop().animate({
-            scrollTop: ($(document.getElementById(anchor.getAttribute('href').split('#')[1])).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-        return false;
-    });
+    // $(window).scrollspy({
+    //     target: ".navbar-fixed-top",
+    //     offset: 100
+    // });
+    // $("#mainNav").affix({
+    //     offset: {
+    //         top: 50
+    //     }
+    // });$('#trigger-overlay').click(function() {
+    //     if (window.parent !== window.self) {
+    //         if (window.parent['isInMobileApp']) {
+    //             document.getElementById('menuOverlaySection').style.height = window.parent.document.getElementById('pageFrame').offsetHeight.toString() + 'px';
+    //         } else {
+    //             document.getElementById('menuOverlaySection').style.height = '100%';
+    //         }
+    //     } else {
+    //         document.getElementById('menuOverlaySection').style.height = '100%';
+    //     }
+    // });
+    // $('.menuItem').click(function() {
+    //     if (window.self == window.top) {
+    //         document.getElementsByClassName('overlay-close')[0].click();
+    //     }
+    // });
+    // $(document).on('click', 'a.page-scroll', function(event) {
+    //     var anchor = $(this);
+    //     if (anchor.length > 0) {
+    //         anchor = anchor[0];
+    //     }
+    //     $('html, body').stop().animate({
+    //         scrollTop: ($(document.getElementById(anchor.getAttribute('href').split('#')[1])).offset().top - 50)
+    //     }, 1250, 'easeInOutExpo');
+    //     event.preventDefault();
+    //     return false;
+    // });
     // $(document).ready(function() {
     //     if (window.self === window.top) {
     //         loadLeiaAd();
@@ -1511,5 +1782,5 @@
     //     document.body.appendChild(tag);
     // }
 </script>
-<!-- Config CSS -->
+
 </html>

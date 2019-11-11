@@ -1,0 +1,489 @@
+.navbar-brand {
+    padding: 0;
+}
+.teamItem a {
+    color: rgb(243, 156, 18);
+}
+.sectionTitle {
+    text-shadow: 2px 2px 2px rgba(16, 16, 16, 0.57);
+}
+#shopButton {
+    text-shadow: none;
+    padding: 10px 40px;
+    border-radius: 0;
+    border: none;
+}
+#bookButton {
+    text-shadow: none;
+    padding: 10px 40px;
+    border-radius: 0;
+    border: none;
+}
+#subscribeButton {
+    text-shadow: none;
+    padding: 10px 40px;
+    border-radius: 0;
+    border: none;
+}
+.contactForm .input-group-addon {
+    font-size: 16px;
+}
+.contactForm .input-group input, textarea {
+    height: 50px;
+    border-bottom-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contactForm textarea {
+    border-bottom-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contactForm label {
+    font-size: 18px;
+}
+#contactButton {
+    text-shadow: none;
+    padding: 10px 40px;
+    border-radius: 0;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+}body {
+     font-family: 'Strait', sans-serif !important;
+ }.overlay {
+      position: fixed;
+      width: 20%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+  }
+@media only screen and (max-width : 800px) {
+    .overlay {
+        width: 40%;
+    }
+}
+@media only screen and (max-width : 400px) {
+    .overlay {
+        width: 65%;
+    }
+}
+#trigger-overlay {
+    background: transparent;
+    border: none;
+    outline: none;
+    float: right;
+    margin-top: 3px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+#trigger-overlay i {
+    color: rgb(255,255,255);
+    font-size: 25px;
+    padding: 11px 14px;
+    background: rgba(0,0,0,0.75);
+}
+.overlay .overlay-close {
+    font-size: 19px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    border: none;
+    background: rgb(243, 156, 18);
+    color: rgb(255,255,255) !important;
+    outline: none;
+}
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+.overlay ul li {
+    display: block;
+    height: 20%;
+    height: calc(100% /7);
+    min-height: 54px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.overlay ul li a {
+    font-size: 22px;
+    display: block;
+    color: rgb(255,255,255);
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    color: rgb(243, 156, 18);
+    text-decoration: none;
+}
+.overlay-open::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.overlay-contentpush {
+    background: rgba(0,0,0,0.75);
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+    transition: transform 0.5s, visibility 0s 0.5s;
+}
+.overlay-contentpush.open {
+    visibility: visible;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+header .btn {
+    border: solid 2px rgb(255,255,255);
+    color: rgb(255,255,255);
+    background: rgb(243, 156, 18);
+    text-transform: none;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+header .btn:hover {
+    background: rgb(255,255,255) !important;
+    color: blue !important;
+    border: solid 2px rgb(255,255,255) !important;
+}
+header .btn::selection {
+    color: rgb(255,255,255);
+}
+header .btn::-moz-selection {
+    color: rgb(255,255,255);
+}
+header .btn:active {
+    color: rgb(255,255,255);
+}
+header .btn:active {
+    color: rgb(255,255,255);
+}
+#singleImageHeader {
+    background-repeat: no-repeat !important;
+    background-size: cover, 100% 100% !important;
+    background-position: 50% 50%, center !important;
+}
+footer {
+    background: rgba(0,0,0,0.75);
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    margin-bottom: 0 !important;
+}
+.contactForm textarea {
+    resize: none;
+    height: 150px !important;
+}
+.sweet-alert h2 {
+    font-size: 30px !important;
+    text-shadow: none !important;
+    text-transform: none !important;
+}
+.user-stats {
+    width: 80%;
+    left: 10%;
+    margin-top: 40px;
+}
+#sEmail {
+    height: 30px;
+}
+.outerGrid {
+    display: inline-grid;
+    position: relative;
+}
+.innerGridTable {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.innerTableContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+.customFrameElem {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.insertNewBtn {
+    font-size: 30px;
+}
+@media only screen and (max-width : 800px) {
+    .affix-top .navbar-nav>li>a {
+        color: rgb(255,255,255) !important;
+    }
+    .affix-top #pageTitle {
+        color: rgb(255,255,255) !important;
+    }
+    .row {
+        display: initial !important;
+        margin: 0;
+    }
+    .col-md-10 {
+        width: 100%;
+    }
+    .headerSectionDiv {
+        margin-top: 80px;
+        text-align: center !important;
+        display: block !important;
+        margin-bottom: 80px;
+    }
+    .headerContentContainer {
+        display: block !important;
+    }
+    .extraTextSection {
+        position: initial !important;
+        width: 100%;
+    }
+    .extraTextSectionLeft {
+        margin-bottom: 50px;
+    }
+    .extraTextSectionRight {
+        margin-top: 50px;
+    }
+    header .newsLetterForm {
+        width: 60%;
+        left: 20%;
+    }
+    .user-stats {
+        width: 60%;
+        left: 20%;
+    }
+}
+@media only screen and (max-width : 400px) {
+    .headerSectionDiv {
+        text-align: center !important;
+        margin-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 80px;
+    }
+    .pSection {
+        margin-top: 20px !important;
+    }
+    header .newsLetterForm {
+        width: 100%;
+        left: 0;
+    }
+    .user-stats {
+        width: 100%;
+        left: 0;
+    }
+}
+html {
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    position: absolute;
+    width: 100%;
+}
+header {
+    height: 700px;
+    width: 100%;
+    display: table;
+    background-color: rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 3px black;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+section {
+    background-repeat: no-repeat !important;
+    background-size: cover, 100% 100% !important;
+    background-position: 50% 50%, center !important;
+    position: relative;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+.headerContainer {
+    margin-top: 50px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    padding-bottom: 50px;
+}
+h1 {
+    font-size: 130px;
+}
+h2 {
+    font-size: 110px;
+}
+h3 {
+    font-size: 90px;
+}
+h4 {
+    font-size: 40px;
+}
+h5 {
+    font-size: 35px;
+}
+h6 {
+    font-size: 30px;
+}
+.row {
+    display: flex;
+}
+#mainTitleSection {
+    display: table !important;
+    height: 100%;
+    table-layout: fixed;
+}
+.headerContentContainer {
+    vertical-align: middle;
+    display: table-cell !important;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.newsLetterForm .input-group {
+    margin-left: 10%;
+    width: 80%;
+}
+.newsLetterForm input {
+    height: 30px;
+}
+.contactForm input {
+    height: 30px;
+}
+.pSection {
+    position: relative;
+    margin-top: 20px !important;
+    display: table;
+    height: 100%;
+}
+.pContainer {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+.aboutP {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.galleryItem img {
+    min-width: 20px;
+    min-height: 20px;
+}
+#leiaAdLogo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 6%;
+    border-radius: 50%;
+    box-shadow: black 0 0 3px -1px;
+    cursor: pointer;
+    z-index: 10000000;
+}
+@media only screen and (max-width : 800px) {
+    .headerSectionDiv {
+        width: 100%;
+    }
+    .navbar-header img {
+        max-height: 45px !important;
+    }
+    #pageTitle {
+        padding-left: 10px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 70px;
+    }
+    h3 {
+        font-size: 50px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 35px;
+    }
+    h6 {
+        font-size: 30px;
+    }
+    #leiaAdLogo {
+        width: 20%;
+    }
+}
+@media only screen and (max-width : 400px) {
+    #pageTitle {
+        padding-top: 20px !important;
+    }
+}#mainSubtitle {
+     color: rgb(255,255,255);
+     text-transform: none;
+ }#mainTitle {
+      color: rgb(255,255,255);
+      text-transform: none;
+  }.sectionTitle {
+       font-size: 50px;
+       text-align: center;
+       text-transform: none;
+       color: rgb(0,0,0);
+   }
+.sectionSubtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: none;
+    color: rgb(0,0,0);
+}
+.pageSection {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+.pageSection p {
+    padding: 0 20px;
+}
+.descriptionText {
+    font-size: 18px;
+}.descriptionText {
+     font-size: 18px;
+ }
+
+#singleImageHeader {
+    background: url('/Images/Ljnh2-8H59v-NRrvF-Cj279-GcEb5.jpeg');
+}
