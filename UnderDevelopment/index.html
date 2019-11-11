@@ -1,0 +1,3317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id='descriptionTag' name="description" content="This is a description for the site.">
+    <title>Fantasy Music</title>
+    <link id="favicon" rel="icon" href="https://heyleia.com/images/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <script src="https://heyleia.com/js/analytics.js"></script>
+    <link href="https://site.live/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://heyleia.com/css/sweetalert.css' rel='stylesheet'>
+    <script src='https://heyleia.com/js/swal.min.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato&amp;display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:800,800i&display=swap' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+
+    <style id='fontFamilyStyle'>
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        p, span, label, a, button, strong, div, em {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+    <link href='https://heyleia.com/css/leia.css' rel='stylesheet'>
+</head>
+<body>
+<div id='mainMenu' class='noCustomElement'>
+    <div id='menuButtonWrap' class='noCustomElement'>
+        <button class='menuButton' id="trigger-overlay" type="button" onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush open'">
+            <i class="openMenuIcon fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div id='menuOverlaySection' class="overlay overlay-contentpush noCustomElement">
+        <div id='menuOuterRow' class='row noCustomElement'>
+            <div class='col-lg-6 col-lg-offset-3 col-sm-offset-0 col-xs-12 noCustomElement'>
+                <button id='close-menu' type="button" class="overlay-close" onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush'">
+                    <i class="closeMenuIcon fa fa-times" aria-hidden="true"></i>
+                </button>
+                <ul id="menuItems" class="nav navbar-nav">
+
+                    <li class='menuItemLi'>
+                        <a id="aboutMenuItem" class="menuItemA" href="#about">About</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="featuresMenuItem" class="menuItemA" href="#features">Features</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="galleryMenuItem" class="menuItemA" href="#gallery">Gallery</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="testimonialsMenuItem" class="menuItemA" href="#testimonial">Testimonials</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="teamMenuItem" class="menuItemA" href="#team">Team</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="blogMenuItem" class="menuItemA" href="#blog">Blog</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="contactMenuItem" class="menuItemA" href="#contact">Contact</a>
+                    </li>
+                    <li class='menuItemLi'>
+                        <a id="bookMenuItem" class="menuItemA" href="/book">Book</a>
+                    </li>
+                </ul>
+                <ul id="menuIcons" class="nav navbar-nav">
+
+                    <li class='menuItemLi'>
+                        <a class='menuItemA'><i class='fab fa-facebook'></i></a>
+                        <a class='menuItemA'><i class='fab fa-twitter'></i></a>
+                        <a class='menuItemA'><i class='fab fa-instagram'></i></a>
+                    </li>
+                </ul>
+                <a id='menuTitle' class='navbar-brand page-scroll' href='#'>Fantasy</a>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #mainMenu {
+            text-align: center;
+            word-break: break-word;
+        }
+
+        #mainMenu .floatingToolbox {
+            z-index: 10000 !important;
+        }
+
+        #mainMenu .overlay ul {
+            height: auto;
+        }
+
+        #menuButtonWrap {
+            text-align: center;
+            position: fixed;
+            width: 20%;
+            left: 40%;
+            z-index: 1;
+        }
+
+        .menuButton {
+            font-size: 32px;
+            color: white;
+            border: none;
+        }
+
+        #trigger-overlay {
+            position: initial;
+            margin-top: 50px;
+            background: transparent;
+        }
+
+        #close-menu {
+            position: fixed;
+            font-size: 30px;
+            top: 50px;
+            right: 50px;
+            background: transparent;
+            cursor: pointer;
+            color: white;
+            transition: 0.4s;
+        }
+
+        #close-menu:hover {
+            opacity: 0.7;
+        }
+
+        .closeMenuIcon {
+            text-shadow: 1px 1px 2px black;
+        }
+
+        #menuOverlaySection {
+            width: 100%;
+            background: rgba(193,178,130,0.7);
+            text-align: center;
+            text-align: -webkit-center;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        #menuOverlaySection::-webkit-scrollbar {
+            width: 0 !important;
+        }
+
+        .overlay-contentpush,
+        .overlay-contentpush.close {
+            visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: visibility 0s 0.5s;
+            transition: visibility 0s 0.5s;
+            -webkit-transition: opacity 1.0s ease-in;
+            -moz-transition: opacity 1.0s ease-in;
+            -o-transition: opacity 1.0s ease-in;
+            opacity: 0;
+        }
+
+        .overlay-contentpush.open {
+            visibility: visible;
+            -webkit-transition: -webkit-transform 0.5s;
+            transition: transform 0.5s;
+            -webkit-transition: opacity 1.0s ease-in;
+            -moz-transition: opacity 1.0s ease-in;
+            -o-transition: opacity 1.0s ease-in;
+            opacity: 1;
+        }
+
+        #menuItems {
+            margin-top: 80px;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        #menuItems .menuItemLi {
+            width: 100%;
+            min-height: 35px;
+            text-align: center;
+        }
+
+        #menuItems .menuItemLi a {
+            color: white;
+            font-size: 26px;
+            transition: 0.4s;
+            padding: 12px 0;
+        }
+
+        #menuItems .menuItemLi a:hover {
+            background: transparent;
+            opacity: 0.6;
+        }
+
+        #menuIcons {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #menuIcons .menuItemA {
+            color: white;
+            font-size: 28px;
+            display: inline-block;
+            padding: 0 15px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        #menuIcons .menuItemA:hover {
+            opacity: 0.6;
+            background: transparent;
+        }
+
+        #menuTitle {
+            font-size: 45px;
+            color: white;
+            width: 100%;
+            letter-spacing: 0.1em;
+            transition: 0.4s;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+
+        #menuTitle:hover {
+            opacity: 0.6;
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #close-menu {
+                right: 15px;
+            }
+
+            #menuItems {
+                margin-top: 10px;
+            }
+
+            #menuIcons {
+                margin-bottom: 0 !important;
+            }
+
+            .overlay ul li {
+                min-height: auto;
+            }
+        }
+    </style>
+</div>
+<script>
+    $(document).ready(function() {
+        $('nav').fadeIn();
+    });
+</script>
+<header>
+
+    <div class='sectionOverlay' id='headerOverlay' style='background: rgba(0, 0, 0, 0.3)'></div>
+    <div id="outerHeader" class='noCustomElement'>
+        <div id="headerContainer" class='noCustomElement'>
+            <div id='headerContent' class='noCustomElement'>
+                <div id='headerOuterRow' class='row noCustomElement'>
+                    <div id="iconContainer" class='outerGrid col-sm-1 col-sm-offset-1 col-xs-1 noCustomElement'>
+                        <div class='innerGridTable noCustomElement'>
+                            <div class='innerTableContent noCustomElement'>
+                                <div><i class="headerIcon far fa-thumbs-up"></i></div>
+                                <div><i id="facebookHeader" class="headerIcon icon fab fa-facebook-f"></i></div>
+                                <div><i id="twitterHeader" class="headerIcon icon fab fa-twitter"></i></div>
+                                <div><i id="yelpHeader" class="headerIcon icon fab fa-yelp"></i></div>
+                                <div><i id="instagramHeader" class="headerIcon icon fab fa-instagram"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="titleSide" class='outerGrid col-sm-8 col-xs-9 col-xs-offset-1 noCustomElement'>
+                        <div class='innerGridTable noCustomElement'>
+                            <div id='titleSideInner' class='innerTableContent noCustomElement'>
+                                <div id='headerTitleWrap'><h1 id="headerTitle" class='headerTitles'>Fantasy Music</h1></div>
+                                <div id='headerSubtitleWrap'><h3 id="headerSubtitle" class='headerSubtitles'>Most Popular App Among Artist </h3></div>
+                                <div id="headerButtons"><div><a class='headerButton'>Contact Us</a></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style type="text/css">
+
+            #headerContent {
+                color: white;
+                word-break: break-word;
+            }
+
+            #headerOuterRow {
+                display: flex;
+            }
+
+            #titleSideInner {
+                display: table-caption;
+            }
+
+            #headerTitle {
+                font-size: 112px;
+            }
+
+            #headerSubtitle {
+                font-size: 42px;
+            }
+
+            #iconContainer {
+                text-align: center;
+            }
+
+            .headerIcon {
+                font-size: 36px;
+                margin: 15px;
+            }
+
+            .headerIcon {
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .headerIcon:hover {
+                opacity: 0.5;
+            }
+
+            #headerButtons {
+                margin-top: 60px;
+            }
+
+            .headerButton {
+                font-size: 22px;
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+                padding: 6px 54px;
+                border-radius: 2px;
+                background-color: rgba(0,0,0,0.4);
+                border: 1px solid white;
+                transition: 0.5s;
+                display: inline-block;
+            }
+
+            .headerButton:hover {
+                color: rgb(193,178,130);
+                text-decoration: none;
+                background-color: rgba(255,255,255,0.7);
+            }
+
+            header .customTitle {
+                font-size: 30px;
+                display: block;
+            }
+
+            header .customParagraph {
+                font-size: 20px;
+                display: block;
+            }
+
+            header .customLink,
+            header .customLink a {
+                color: white;
+                font-size: 20px;
+                display: block;
+                width: 100%;
+            }
+
+            header .customLink:hover {
+                opacity: 0.5;
+                text-decoration: none;
+            }
+
+            header .customIcon {
+                font-size: 36px;
+            }
+
+            header .customTitle,
+            header .customParagraph,
+            header .customLink,
+            header .customIcon,
+            header .customButton,
+            header .customImage,
+            header .customEmbed {
+                margin: 10px 0;
+            }
+
+            header #headerButtons .customTitle,
+            header #headerButtons .customParagraph,
+            header #headerButtons .customLink,
+            header #headerButtons .customIcon,
+            header #headerButtons .customButton,
+            header #headerButtons .customImage,
+            header #headerButtons .customEmbed {
+                margin: 20px 0 0;
+            }
+
+            @media only screen and (max-width : 800px) {
+
+                #headerTitle {
+                    margin-top: 48px;
+                    font-size: 52px;
+                }
+
+                #headerSubtitle {
+                    font-size: 20px;
+                }
+
+                #iconContainer {
+                    text-align: center;
+                    margin-top: 36px;
+                }
+
+                .icon {
+                    margin-top: 0px;
+                }
+
+                .headerButton {
+                    margin-top: 15px;
+                    font-size: 16px;
+                    padding: 6px 38px;
+                }
+
+                .headerIcon {
+                    width: 32px;
+                    height: 32px;
+                    padding-top: 7px;
+                    font-size: 20px;
+                }
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                header .customTitle {
+                    font-size: 24px;
+                }
+
+                header .customParagraph {
+                    font-size: 16px;
+                }
+
+                header .customLink a {
+                    font-size: 16x;
+                }
+
+                header #headerTitleWrap .customTitle,
+                header #headerTitleWrap .customParagraph,
+                header #headerTitleWrap .customLink,
+                header #headerTitleWrap .customIcon,
+                header #headerTitleWrap .customButton,
+                header #headerTitleWrap .customImage,
+                header #headerTitleWrap .customEmbed {
+                    margin: 0;
+                }
+
+                header #headerSubtitleWrap .customTitle,
+                header #headerSubtitleWrap .customParagraph,
+                header #headerSubtitleWrap .customLink,
+                header #headerSubtitleWrap .customIcon,
+                header #headerSubtitleWrap .customButton,
+                header #headerSubtitleWrap .customImage,
+                header #headerSubtitleWrap .customEmbed {
+                    margin-bottom: 0;
+                }
+            }
+        </style>
+    </div>
+    <style>
+
+        header {
+            background: url('/img/fantasyfootball-mebt1-K4G85-Vy2lF-rC2yl-PbwRl.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            background-attachment: fixed;
+        }
+    </style>
+</header>
+
+<section id='about'>
+    <div class='sectionOverlay' id='aboutOverlay' style='background: rgba(0, 0, 0, 0)'></div>
+    <div id='outerAbout' class='outerSection noCustomElement'>
+        <div id='aboutContainer' class='sectionContainer noCustomElement'>
+            <div id='aboutContent' class='sectionContent container-fluid noCustomElement'>
+                <div class='row noCustomElement'>
+                    <div id='aboutTop' class='col-lg-4 col-lg-offset-4 noCustomElement'>
+                        <div id='aboutSubtitleWrap'><h4 id='aboutSubtitle' class='aboutSubtitles'>Get in touch with who we are</h4></div>
+                        <div id='aboutTitleWrap'><h2 id='aboutTitle' class='aboutTitles'>Learn More</h2></div>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div id='aboutMid' class='col-lg-4 col-lg-offset-4 noCustomElement'>
+                        <div id='aboutImage1'><img class='aboutImages' src='/img/fantasyfootball-lr1sA-SVeuE-W59c3-5ysxa-yecrS.jpg'/></div>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div id='aboutBottom' class='col-lg-4 col-lg-offset-4 noCustomElement'>
+                        <div id='aboutParagraph1Wrap'><p id='aboutParagraph1' class='aboutParagraph'>Get the outcomes that you merit when you request assistance from our Fantasy Football experts! This knowledge can be utilized to analyze everything necessary to always ensure a comprehensive, dignified approach to unified problem solving. Our dependable services will always work to convey everything required to get you set up in the most effective way possible.</p></div>
+                        <div id='aboutParagraph2Wrap'><p id='aboutParagraph2' class='aboutParagraph'>We know how important Fantasy Football is to the value of our customers. As a Fantasy Football group, the services provided include everything you need in one place and at the best quiality. We will also expertly perform all that is necessary to transition you from your current solution over to ours. In a world that is constantly changing, you can be sure that the folks here will be by your side with every step of the process.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #about {
+                color: black;
+                text-align: center;
+            }
+
+            #about .aboutImageBg {
+                color: white;
+            }
+
+            #aboutTop {
+                margin-bottom: 36px;
+            }
+
+            #aboutSubtitle {
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-size: 20px;
+            }
+
+            #aboutTitle {
+                font-size: 34px;
+                margin-top: 10px;
+            }
+
+            .aboutImages {
+                width: 100%;
+            }
+
+            #about .aboutImageBg .aboutImages {
+                border: 2px solid white;
+            }
+
+            #aboutBottom {
+                margin-top: 36px;
+            }
+
+            .aboutParagraph {
+                line-height: 1.75;
+            }
+
+            #aboutParagraph1 {
+                margin-bottom: 18px;
+            }
+
+            #about .customTitle {
+                font-size: 34px;
+                display: block;
+            }
+
+            #about .customParagraph {
+                font-size: 14px;
+                line-height: 1.75;
+                display: block;
+            }
+
+            #about .customLink {
+                color: black;
+                font-size: 16px;
+                display: block;
+                width: 100%;
+            }
+
+            #about .aboutImageBg .customLink {
+                color: white;
+            }
+
+            #about .customLink:hover {
+                opacity: 0.5;
+                text-decoration: none;
+            }
+
+            #about .customIcon {
+                font-size: 34px;
+            }
+
+            #about .customTitle,
+            #about .customParagraph,
+            #about .customLink,
+            #about .customIcon,
+            #about .customButton,
+            #about .customImage,
+            #about .customEmbed {
+                margin: 10px 0;
+            }
+
+            #about #aboutParagraph1Wrap .customTitle,
+            #about #aboutParagraph1Wrap .customParagraph,
+            #about #aboutParagraph1Wrap .customLink,
+            #about #aboutParagraph1Wrap .customIcon,
+            #about #aboutParagraph1Wrap .customButton,
+            #about #aboutParagraph1Wrap .customImage,
+            #about #aboutParagraph1Wrap .customEmbed {
+                margin: 0 0 20px;
+            }
+
+            @media only screen and (max-width : 1050px) {
+
+                #aboutContent {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                #aboutSubtitle {
+                    font-size: 16px;
+                }
+
+                #about .customEmbed iframe {
+                    width: 100%;
+                }
+            }
+        </style>
+    </div>
+    <style>
+        #aboutContainer {
+            background: rgb(255,255,255);
+        }
+    </style>
+</section>
+<section id='features'>
+    <div class='sectionOverlay' id='featuresOverlay' style='background: rgba(0 ,0, 0, 0.5)'></div>
+    <div id='outerFeatures' class='outerSection noCustomElement'>
+        <div id='featuresContainer' class='sectionContainer featuresImageBg noCustomElement'>
+            <div id='featuresContent' class='sectionContent container-fluid noCustomElement'>
+                <div class='row noCustomElement'>
+                    <div id='featuresTop' class='col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 noCustomElement'>
+                        <div id='featuresTitleWrap'><h2 id='featuresTitle' class='featuresTitles'>Our Qualities</h2></div>
+                        <div id='featuresHrWrap'><hr class='featuresHr'></div>
+                        <div id='featuresParagraphWrap'><p id='featuresParagraph' class='featuresParagraph'>We are one of the the top Fantasy Football solutions in the area. We have been giving high caliber, intensely evaluated Fantasy Football solutions to all who come to us for years. In that time, we have found out about client administration and the benefit of realizing our customers needs. We adore driving by ordinary and perceiving how extraordinary we can become together!</p></div>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div class='col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 noCustomElement'>
+                        <div id='featuresRowContainer' class='noCustomElement'>
+                            <!-- featuresTemplate start --><div class='features3 row noCustomElement'>
+                            <div class='featuresTemplate outerGrid col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div id='featuresIconWrap' class='innerTableContent noCustomElement'>
+                                        <div class='featuresIcons'><i class='featuresIcon fa fa-user'></i></div>
+                                        <div class='featuresHeaderWrap'><h5 class="featuresHeader">Trusted</h5></div>
+                                        <div class='featuresTextWrap'><p class='featuresText'>We are trusted by thousands all around the world to deliver quality work on time.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='featuresTemplate outerGrid col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div id='featuresIconWrap' class='innerTableContent noCustomElement'>
+                                        <div class='featuresIcons'><i class='featuresIcon fas fa-money-bill-alt'></i></div>
+                                        <div class='featuresHeaderWrap'><h5 class="featuresHeader">Effective</h5></div>
+                                        <div class='featuresTextWrap'><p class='featuresText'>We always maximize our resources to work hard and come in under budget every time.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='featuresTemplate outerGrid col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div id='featuresIconWrap' class='innerTableContent noCustomElement'>
+                                        <div class='featuresIcons'><i class='featuresIcon fa fa-thumbs-up'></i></div>
+                                        <div class='featuresHeaderWrap'><h5 class="featuresHeader">Quality</h5></div>
+                                        <div class='featuresTextWrap'><p class='featuresText'>We always perform our projects with the utmost quality and integrity.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class='features3 row noCustomElement'>
+                            <div class='featuresTemplate outerGrid col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div id='featuresIconWrap' class='innerTableContent noCustomElement'>
+                                        <div class='featuresIcons'><i class='featuresIcon fas fa-users'></i></div>
+                                        <div class='featuresHeaderWrap'><h5 class="featuresHeader">Dedicated</h5></div>
+                                        <div class='featuresTextWrap'><p class='featuresText'>Loving what you do is the first step in delivering quality work every time - and we do.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='featuresTemplate outerGrid col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div id='featuresIconWrap' class='innerTableContent noCustomElement'>
+                                        <div class='featuresIcons'><i class='featuresIcon fa fa-calendar'></i></div>
+                                        <div class='featuresHeaderWrap'><h5 class="featuresHeader">On Time</h5></div>
+                                        <div class='featuresTextWrap'><p class='featuresText'>Our projects are never late. They are always completed with care and delivered on time.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='featuresTemplate outerGrid col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div id='featuresIconWrap' class='innerTableContent noCustomElement'>
+                                        <div class='featuresIcons'><i class='featuresIcon fas fa-cloud'></i></div>
+                                        <div class='featuresHeaderWrap'><h5 class="featuresHeader">Cutting Edge</h5></div>
+                                        <div class='featuresTextWrap'><p class='featuresText'>We stay on the cutting edge of the industry to ensure you are always working with the best.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- featuresTemplate end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #features {
+                color: black;
+            }
+
+            #features .featuresImageBg {
+                color: white;
+            }
+
+            #featuresTop {
+                text-align: center;
+            }
+
+            #featuresTitle {
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+
+            .featuresHr {
+                border: 6px dashed rgb(193,178,130);
+                width: 20%;
+                margin: 10px auto;
+            }
+
+            #features .featuresImageBg .featuresHr {
+                border-color: white;
+            }
+
+            #featuresParagraphWrap {
+                margin: 36px 0 40px;
+            }
+
+            .featuresParagraph {
+                font-size: 18px;
+                font-style: italic;
+                letter-spacing: 0.07em;
+            }
+
+            #features3 {
+                display: flex;
+            }
+
+            .featuresTemplate {
+                margin-top: 24px;
+            }
+
+            #featuresIconWrap {
+                text-align: center;
+            }
+
+            .featuresIcon {
+                font-size: 45px;
+                border: 6px solid rgb(193,178,130);
+                border-radius: 50%;
+                padding: 20px;
+            }
+
+            #features .featuresImageBg .featuresIcon {
+                border-color: white;
+            }
+
+            .featuresHeaderWrap {
+                margin: 18px 0;
+            }
+
+            .featuresHeader {
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            .featuresText {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            #features .customTitle {
+                font-size: 35px;
+                display: block;
+            }
+
+            #features #featuresRowContainer .customTitle {
+                font-size: 20px;
+            }
+
+            #features .customParagraph {
+                font-size: 18px;
+                font-style: italic;
+                letter-spacing: 0.07em;
+                display: block;
+            }
+
+            #features #featuresRowContainer .customParagraph {
+                font-size: 14px;
+                font-style: normal;
+                letter-spacing: normal;
+            }
+
+            #features .customLink {
+                color: black;
+                font-size: 18px;
+                display: block;
+                width: 100%;
+            }
+
+            #features #featuresRowContainer .customLink {
+                font-size: 14px;
+            }
+
+            #features .featuresImageBg .customLink {
+                color: white;
+            }
+
+            #features .customLink:hover {
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            #features .customIcon {
+                font-size: 32px;
+            }
+
+            #features .customTitle,
+            #features .customParagraph,
+            #features .customLink,
+            #features .customIcon,
+            #features .customButton,
+            #features .customImage,
+            #features .customEmbed {
+                margin: 10px 0;
+            }
+
+            #features #featuresTitleWrap .customTitle,
+            #features #featuresTitleWrap .customParagraph,
+            #features #featuresTitleWrap .customLink,
+            #features #featuresTitleWrap .customEmbed {
+                margin: 10px 0 15px;
+            }
+
+            #features #featuresTitleWrap .customIcon,
+            #features #featuresTitleWrap .customButton,
+            #features #featuresTitleWrap .customImage,
+            #features #featuresTitleWrap .customEmbed {
+                margin: 0 0 10px;
+            }
+
+            #features .featuresIcons .customTitle,
+            #features .featuresIcons .customParagraph,
+            #features .featuresIcons .customLink,
+            #features .featuresIcons .customEmbed {
+                margin: 15px 0 10px;
+            }
+
+            #features .featuresIcons .customIcon,
+            #features .featuresIcons .customButton,
+            #features .featuresIcons .customImage,
+            #features .featuresHeaderWrap .customTitle,
+            #features .featuresHeaderWrap .customParagraph,
+            #features .featuresHeaderWrap .customLink,
+            #features .featuresHeaderWrap .customEmbed {
+                margin: 15px 0 0;
+            }
+
+            #features .featuresHeaderWrap .customIcon,
+            #features .featuresHeaderWrap .customButton,
+            #features .featuresHeaderWrap .customImage {
+                margin: 5px 0 0;
+            }
+
+            #features .featuresTextWrap .customTitle,
+            #features .featuresTextWrap .customParagraph,
+            #features .featuresTextWrap .customLink,
+            #features .featuresTextWrap .customIcon,
+            #features .featuresTextWrap .customButton,
+            #features .featuresTextWrap .customImage,
+            #features .featuresTextWrap .customEmbed {
+                margin: 0 0 10px;
+            }
+
+            @media only screen and (max-width : 1050px) {
+
+                .featuresText {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                #featuresTitle {
+                    margin-bottom: 40px;
+                }
+
+                .featuresHr {
+                    width: 40%;
+                }
+
+                #featuresParagraphWrap {
+                    margin: 36px 0 12px;
+                }
+
+                #features3 {
+                    display: initial;
+                    margin: 0;
+                }
+
+                .featuresIcon {
+                    margin-top: 38px;
+                }
+
+                .featuresHeaderWrap {
+                    margin: 10px 0;
+                }
+
+                .featuresText,
+                #features #featuresRowContainer .customParagraph {
+                    line-height: 1.25;
+                }
+            }
+        </style>
+    </div>
+    <style>
+        #featuresContainer {
+            background: url('/img/fantasy-yXw2K-GXw4V-FBXV1-QzDmO-aJjSO.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</section>
+<section id='gallery'>
+    <script>
+        // script start
+        $.browser = {}; $.support.opacity = true;
+        // script end
+    </script>
+    <script src='/lib/fancybox/jquery.fancybox-1.3.4.pack.js?v=1572290374'></script>
+    <script src='/lib/fancybox/jquery.easing-1.3.pack.js'></script>
+    <script src='/lib/fancybox/jquery.mousewheel-3.0.4.pack.js'></script>
+    <link href='/lib/fancybox/jquery.fancybox-1.3.4.css' rel='stylesheet'>
+    <div class='sectionOverlay' id='galleryOverlay' style='background: rgba(0, 0, 0, 0)'></div>
+    <div id='outerGallery' class='outerSection noCustomElement'>
+        <div id='galleryContainer' class='sectionContainer noCustomElement'>
+            <div id='galleryContent' class='sectionContent container-fluid noCustomElement'>
+                <div class='row noCustomElement'>
+                    <div class='col-md-10 col-md-offset-1 col-sm-12 col-xs-12 noCustomElement'>
+                        <div class='noCustomElement'>
+                            <div id='galleryTitleWrap'><h2 id='galleryTitle' class='galleryTitles'>Photos</h2></div>
+                            <div id='galleryTitleHrWrap'><hr id='galleryTitleHr'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div class='col-md-10 col-md-offset-1 col-sm-12 noCustomElement'>
+                        <div id='galleryBottom' class='row noCustomElement'>
+                            <div class='outerGrid col-sm-3 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div class='innerTableContent noCustomElement'>
+                                        <div id='categoryButtonContainer'>
+                                            <div id='categoryButtonRow' class='buttons4 noCustomElement'>
+                                                <div class='categoryButtonContainer noCustomElement'>
+                                                    <div class='categoryButtonWrap noCustomElement'><a id='allCategoriesBtn' class='categoryButton allCategoryButton categoryButtonSelected' data-filter="all">All Categories</a></div>
+                                                </div>
+                                                <div class='categoryButtonContainer noCustomElement'>
+                                                    <div class='categoryButtonWrap noCustomElement'><a class='categoryButton' data-filter="category1">Category 1</a></div>
+                                                </div>
+                                                <div class='categoryButtonContainer noCustomElement'>
+                                                    <div class='categoryButtonWrap noCustomElement'><a class='categoryButton' data-filter="category2">Category 2</a></div>
+                                                </div>
+                                                <div class='categoryButtonContainer noCustomElement'>
+                                                    <div class='categoryButtonWrap noCustomElement'><a class='categoryButton' data-filter="category3">Category 3</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='galleryImageSide outerGrid col-sm-9 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div class='innerTableContent noCustomElement'>
+                                        <div id='galleryRowContainer' class='noCustomElement'>
+                                            <!-- galleryTemplate start --><div class='gallery3 row'>
+                                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category1">
+                                                <div class='innerGridTable galleryImage noCustomElement'>
+                                                    <a rel='scrollGroup' href="/img/fantasy-Ua33t-KrG6j-RD7E7-SK8qf-06V3j.jpg" class='fancybox innerTableContent' title='Photo 1'>
+                                                        <img class='galleryImages zoom img-fluid' src="/img/fantasy-Ua33t-KrG6j-RD7E7-SK8qf-06V3j.jpg">
+                                                        <div class="galleryOverlay overlayFade overlayFadeToggle noCustomElement">
+                                                            <h4 class="galleryText">Photo 1</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category2">
+                                                <div class='innerGridTable galleryImage noCustomElement'>
+                                                    <a rel='scrollGroup' href="/img/fantasy-kTsKm-7eD0X-wBE37-oKBlO-84Z7k.jpg" class='fancybox innerTableContent' title='Photo 2'>
+                                                        <img class='galleryImages zoom img-fluid' src="/img/fantasy-kTsKm-7eD0X-wBE37-oKBlO-84Z7k.jpg">
+                                                        <div class="galleryOverlay overlayFade overlayFadeToggle noCustomElement">
+                                                            <h4 class="galleryText">Photo 2</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category3">
+                                                <div class='innerGridTable galleryImage noCustomElement'>
+                                                    <a rel='scrollGroup' href="/img/fantasy-4xhQq-G0AzA-nwfrm-3en8X-lninO.jpg" class='fancybox innerTableContent' title='Photo 3'>
+                                                        <img class='galleryImages zoom img-fluid' src="/img/fantasy-4xhQq-G0AzA-nwfrm-3en8X-lninO.jpg">
+                                                        <div class="galleryOverlay overlayFade overlayFadeToggle noCustomElement">
+                                                            <h4 class="galleryText">Photo 3</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category1">
+                                                <div class='innerGridTable galleryImage noCustomElement'>
+                                                    <a rel='scrollGroup' href="/img/fantasy-xlJMi-tHWQX-CWODL-Oq8uY-lo2Om.jpg" class='fancybox innerTableContent' title='Photo 4'>
+                                                        <img class='galleryImages zoom img-fluid' src="/img/fantasy-xlJMi-tHWQX-CWODL-Oq8uY-lo2Om.jpg">
+                                                        <div class="galleryOverlay overlayFade overlayFadeToggle noCustomElement">
+                                                            <h4 class="galleryText">Photo 4</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category2">
+                                                <div class='innerGridTable galleryImage noCustomElement'>
+                                                    <a rel='scrollGroup' href="/img/fantasy-P0Pyd-elFnx-oX5An-SDAgG-LvxJg.jpg" class='fancybox innerTableContent' title='Photo 5'>
+                                                        <img class='galleryImages zoom img-fluid' src="/img/fantasy-P0Pyd-elFnx-oX5An-SDAgG-LvxJg.jpg">
+                                                        <div class="galleryOverlay overlayFade overlayFadeToggle noCustomElement">
+                                                            <h4 class="galleryText">Photo 5</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="categoryFilter outerGrid col-sm-4 col-xs-12 noCustomElement category3">
+                                                <div class='innerGridTable galleryImage noCustomElement'>
+                                                    <a rel='scrollGroup' href="/img/fantasy-LuKD9-xT0DH-UisaL-gFjbF-MuIMQ.jpg" class='fancybox innerTableContent' title='Photo 6'>
+                                                        <img class='galleryImages zoom img-fluid' src="/img/fantasy-LuKD9-xT0DH-UisaL-gFjbF-MuIMQ.jpg">
+                                                        <div class="galleryOverlay overlayFade overlayFadeToggle noCustomElement">
+                                                            <h4 class="galleryText">Photo 6</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div><!-- galleryTemplate end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #gallery {
+                color: black;
+            }
+
+            #gallery .galleryImageBg {
+                color: white;
+            }
+
+            #galleryContent {
+                word-wrap: break-word;
+                text-align: center;
+            }
+
+            #galleryTitle {
+                font-size: 50px;
+                letter-spacing: .065em;
+                margin: 0;
+            }
+
+            #galleryTitleHr {
+                border: 1px solid rgb(193,178,130);
+                width: 10%;
+                margin: 10px auto 40px;
+            }
+
+            #gallery .galleryImageBg #galleryTitleHr {
+                border-color: white;
+            }
+
+            #galleryBottom {
+                display: flex;
+                background-color: rgba(193,178,130,0.4);
+                padding: 10px;
+                border-radius: 3px;
+            }
+
+            #gallery .galleryImageBg #galleryBottom {
+                border: 1px solid white;
+            }
+
+            .categoryFilter {
+                margin: 10px 0;
+            }
+
+            .galleryImages {
+                height: 250px;
+                width: 100%;
+                border-radius: 3px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .galleryImages:hover {
+                opacity: 0.8;
+            }
+
+            #gallery .galleryImageBg .galleryImages {
+                border: 1px solid white;
+            }
+
+            .galleryOverlay {
+                position: absolute;
+                transition: all .3s ease;
+                opacity: 0;
+                transition: 0.9s;
+                z-index: 1100;
+            }
+
+            .fancybox:hover .galleryOverlay {
+                opacity: 1;
+            }
+
+            .galleryText {
+                color: rgb(193,178,130);
+                text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+                position: absolute;
+                bottom: 0;
+                left: 45%;
+                transform: translate(-50%,-50%);
+                font-size: 20px;
+            }
+
+            .overlayFade {
+                height: 100%;
+                width: 99%;
+                top: 0;
+                padding-right: 0;
+            }
+
+            #fancybox-title {
+                color: white;
+                margin-left: 0 !important;
+                padding: 0 !important;
+                background-color: rgb(193,178,130);
+            }
+
+            #fancybox-title-over {
+                font-size: 14px;
+                text-align: center;
+                border: 2px solid white;
+            }
+
+            #fancybox-content {
+                border: 2px solid white !important;
+                background: white;
+            }
+
+            #fancybox-close {
+                right: -35px;
+            }
+
+            #fancybox-right {
+                right: -20px;
+            }
+
+            #fancybox-bg-nw,
+            #fancybox-bg-ne,
+            #fancybox-bg-sw,
+            #fancybox-bg-se {
+                display: none;
+            }
+
+            .categoryButtonContainer {
+                display: inline-block;
+            }
+
+            .categoryButton {
+                color: rgb(193,178,130);
+                border: 1px solid white;
+                background-color: white;
+                cursor: pointer;
+                display: inline-block;
+                padding: 6px 32px;
+                margin: 5px 0;
+                border-radius: 9px;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+
+            .categoryButton:focus {
+                color: rgb(193,178,130);
+            }
+
+            .categoryButton[contenteditable="true"] {
+                color: inherit !important;
+            }
+
+            .categoryButton:hover {
+                color: rgb(193,178,130);
+                text-decoration: none;
+                border-color: rgb(193,178,130);
+            }
+
+            .categoryButtonSelected {
+                border: 4px double rgb(193,178,130);
+            }
+
+            /* * * * * * * * * */
+
+            #gallery .customTitle {
+                font-size: 40px;
+                display: block;
+            }
+
+            #gallery .customParagraph {
+                font-size: 18px;
+                display: block;
+            }
+
+            #gallery .customLink {
+                color: black;
+                font-size: 18px;
+                display: block;
+                width: 100%;
+            }
+
+            #gallery .galleryImageBg .customLink{
+                color: white;
+            }
+
+            #gallery .customLink:hover {
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            #gallery .customIcon {
+                font-size: 36px;
+            }
+
+            #gallery .customTitle,
+            #gallery .customParagraph,
+            #gallery .customLink,
+            #gallery .customIcon,
+            #gallery .customButton,
+            #gallery .customImage,
+            #gallery .customEmbed {
+                margin: 10px 0;
+            }
+
+            #gallery #categoryButtonContainer .customTitle,
+            #gallery #categoryButtonContainer .customParagraph,
+            #gallery #categoryButtonContainer .customLink,
+            #gallery #categoryButtonContainer .customIcon {
+                color: white;
+            }
+
+            @media only screen and (max-width : 1050px) {
+
+                .galleryImages {
+                    height: 220px;
+                }
+            }
+
+            @media only screen and (max-width : 800px) {
+
+                #galleryTitle {
+                    font-size: 40px;
+                }
+
+                .galleryImages {
+                    height: 190px;
+                }
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                #galleryTitle {
+                    font-size: 36px;
+                    letter-spacing: 0.03em;
+                }
+
+                #galleryBottom {
+                    display: table;
+                }
+
+                .galleryImages {
+                    height: 320px;
+                }
+
+                .galleryTitleOuter {
+                    margin-bottom: 70px;
+                }
+
+                .fancybox:hover .galleryOverlay {
+                    opacity: 0;
+                }
+
+                .galleryText {
+                    display: none;
+                }
+
+                #categoryButtonContainer {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+        <script>
+            // script start
+            $(document).ready(function(){
+                setCategoryClicks();
+            });
+
+            var setCategoryClicks = function() {
+                $(".categoryButton").unbind();
+                $('.categoryButton').click(function(){
+                    // let offsetHeight = document.getElementById('galleryRowContainer').offsetHeight.toString() + 'px';
+                    var value = $(this).attr('data-filter');
+                    // $('#galleryRowContainer').css({'min-height':offsetHeight});
+
+                    // setTimeout(function(){
+                    //     $('#galleryRowContainer').animate({'min-height':'0'});
+                    // },3000)
+
+                    if (value === 'all') {
+                        $('.categoryFilter').show('1000');
+                        $(this).addClass('categoryButtonSelected');
+                        $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                    } else if ($(this).hasClass('categoryButtonSelected')) {
+                        $('.categoryFilter').show('1000');
+                        $(this).removeClass('categoryButtonSelected');
+                        $('.allCategoryButton').addClass('categoryButtonSelected');
+                    }
+                    else {
+                        $('.categoryFilter').not('.' + value).hide('3000');
+                        $('.categoryFilter').filter('.' + value).show('3000');
+                        $('.allCategoryButton').removeClass('categoryButtonSelected');
+                        $('.categoryButton').not(this).removeClass('categoryButtonSelected');
+                        $(this).toggleClass('categoryButtonSelected');
+                    }
+                });
+
+                $("a[rel=scrollGroup]").fancybox({
+                    'transitionIn'		: 'fade',
+                    'transitionOut'		: 'fade',
+                    'titlePosition' 	: 'outside',
+                    'type'              : 'image',
+                    'titleFormat'		: function(title) {
+                        return '<span id="fancybox-title-over">' + title + '</span>';
+                    }
+                });
+            }
+
+            // script end
+        </script>
+    </div>
+    <style>
+        #galleryContainer {
+            background: rgb(255,255,255);
+        }
+    </style>
+</section>
+<section id='testimonial'>
+    <div class='sectionOverlay' id='testimonialsOverlay' style='background: rgba(0 ,0, 0, 0.5)'></div>
+    <div id='outerTestimonial' class='outerSection noCustomElement'>
+        <div id='testimonialContainer' class='sectionContainer testimonialImageBg noCustomElement'>
+            <div id='testimonialContent' class='sectionContent container-fluid noCustomElement'>
+                <div class="row noCustomElement">
+                    <div class='col-md-offset-2 col-md-8 text-center noCustomElement'>
+                        <div id='testimonialTitleWrap'><h2 id='testimonialTitle' class='testimonialTitles'>Testimonials</h2></div>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div class='col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 noCustomElement'>
+                        <div class="carousel slide noCustomElement" data-ride="carousel" id="quote-carousel" data-keyboard="false">
+                            <ol id='testimonialIndicatorContainer' class="carousel-indicators"><li data-target='#quote-carousel' data-slide-to='0' class='active'></li><li data-target='#quote-carousel' data-slide-to='1'></li><li data-target='#quote-carousel' data-slide-to='2'></li><li data-target='#quote-carousel' data-slide-to='3'></li><li data-target='#quote-carousel' data-slide-to='4'></li><li data-target='#quote-carousel' data-slide-to='5'></li><li data-target='#quote-carousel' data-slide-to='6'></li><li data-target='#quote-carousel' data-slide-to='7'></li><li data-target='#quote-carousel' data-slide-to='8'></li><li data-target='#quote-carousel' data-slide-to='9'></li></ol>
+                            <div id='testimonialRowContainer' class="carousel-inner noCustomElement">
+                                <!-- testimonialTemplate start --><div class='item testimonial1 row active'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/jPzPL-WUhWv-HgZXk-xqowR-zlrlV.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Unbelievable job. Very glad I chose to reach out to these guys to learn more. I recommend you do the same.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Shaun</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/mcN7F-aQgiA-E8dMn-FrVWn-mXxEF.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Amazing job! I would recommend these services to anyone looking for some help. No better solution out there.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Mary</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/tiOJX-Dpbit-NLqhh-WhdRX-91UmN.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>These guys were great! I absolutely loved every aspect of using their services. Way to go team.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Brooke</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/v8Gdk-bjCsK-WhV5M-vrNf9-lBZe6.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Never had a better experience than working with this team. Such a great job, guys. Keep it up!</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Jordan</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/N9orI-IdHO6-sqguZ-rG6CC-IxuWS.jpeg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Just one word: AMAZING! Couldn't have asked for much more. Would recommend to anyone here.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Mike</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/0NHOj-eFIcQ-HAa9S-qkkOY-YdWOK.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Such a pleasure working with the team here. 11 out of 10 EASY! You should definitely get in touch with them.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Mark</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/Mp4uD-9lRGz-0l58D-LFDlF-WSp6g.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Wow, what an experience. Such a great team here. Highly recommend to anyone looking at this site right now!</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Tom</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/eEJth-eW9rU-EIklr-lpqE2-TJjpg.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>What a great experience. If you are reading this, you should get in touch with these guys! You won't regret it.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Amanda</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/TbHti-acHom-fsR6Q-AJcrr-9EOdV.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>I can't think of any better group to recommend here. Absolutely loved what these guys were able to do for me.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Samantha</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><div class='item testimonial1 row'>
+                                <div class='col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                                    <blockquote class='testimonialCard'>
+                                        <div class="testimonialRow row noCustomElement">
+                                            <div class="testimonialImageOuter outerGrid col-lg-5 col-md-6 col-sm-5 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialImage'><img class='testimonialImages' src="/img/GbRkU-yKjoZ-vBuSX-fa34x-eseJe.jpeg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonialInfoOuter outerGrid col-lg-offset-1 col-sm-6 col-xs-12 noCustomElement">
+                                                <div class='innerGridTable noCustomElement'>
+                                                    <div class='innerTableContent noCustomElement'>
+                                                        <div class='testimonialIcons'><i class="testimonialIcon far fa-comment"></i></div>
+                                                        <div class='testimonialParagraphWrap'><p class='testimonialParagraph'>Such a pleasant experience working with the team here. Highly recommend their services to anyone.</p></div>
+                                                        <div class='blockquoteSourceWrap'><p class='blockquoteSource'>Tyler</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div><!-- testimonialTemplate end -->
+                            </div>
+                            <a data-slide="prev" data-target="#quote-carousel" class="testimonialCarouselIcons left carousel-control"><i class="testimonialCarouselIcon fas fa-arrow-circle-left"></i></a>
+                            <a data-slide="next" data-target="#quote-carousel" class="testimonialCarouselIcons right carousel-control"><i class="testimonialCarouselIcon fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            #testimonial {
+                color: black;
+            }
+
+            #testimonial .testimonialImageBg {
+                color: white;
+            }
+
+            #testimonialTitleIcon{
+                font-size: 60px;
+            }
+
+            #testimonialTitleWrap {
+                margin-bottom: 20px;
+            }
+
+            #testimonialTitle {
+                font-size: 40px;
+                margin: 0;
+            }
+
+            .testimonialRow {
+                display: flex;
+            }
+
+            #quote-carousel {
+                padding: 0 10px 30px 10px;
+                margin-top: 30px;
+            }
+
+            #quote-carousel .carousel-control {
+                background: none;
+                color: rgb(193,178,130);
+                font-size: 2.3em;
+                text-shadow: none;
+                margin-top: 30px;
+            }
+
+            #testimonial .testimonialImageBg #quote-carousel .carousel-control {
+                color: white;
+            }
+
+            #quote-carousel .carousel-control.left {
+                left: -12px;
+                top: 40px;
+            }
+
+            #quote-carousel .carousel-control.right {
+                right: -12px;
+                top: 40px;
+            }
+
+            #quote-carousel .carousel-indicators {
+                bottom: -35px;
+            }
+
+            #quote-carousel .carousel-indicators li {
+                background: rgba(193,178,130,0.3);
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+                margin: 6px 2px 0;
+            }
+
+            #quote-carousel .carousel-indicators .active {
+                background: rgb(193,178,130);
+            }
+
+            #testimonial .testimonialImageBg #quote-carousel .carousel-indicators .active {
+                background: white;
+            }
+
+            .testimonialCarouselIcons {
+                cursor: pointer;
+            }
+
+            .testimonialImageOuter {
+                padding-left: 0;
+            }
+
+            #quote-carousel img {
+                width: 190px;
+                height: 190px;
+                object-fit: cover;
+            }
+
+            .testimonialImage {
+                text-align: center;
+            }
+
+            #testimonial .testimonialImageBg #quote-carousel img {
+                border: 1px solid white;
+            }
+
+            .item blockquote {
+                border-left: none;
+                margin: 0;
+            }
+
+            .testimonialIcons {
+                font-size: 40px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .testimonialParagraph {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+
+            blockquote p:before {
+                display: none;
+            }
+
+            .blockquoteSourceWrap {
+                margin-top: 5px;
+            }
+
+            .blockquoteSource {
+                color: black;
+                font-size: 12px;
+                font-style: italic;
+                display: block;
+            }
+
+            #testimonial .testimonialImageBg .blockquoteSource {
+                color: white;
+            }
+
+            #testimonial .testimonialImageBg .testimonialInfoHr {
+                border-color: white;
+            }
+
+            #testimonial .testimonialImageBg .blockquoteSource {
+                color: white;
+            }
+
+            /* * * * * * * * */
+
+            #testimonial .customTitle {
+                font-size: 40px;
+                display: block;
+            }
+
+            #testimonial .testimonialCard .customTitle {
+                font-size: 24px;
+            }
+
+            #testimonial .customParagraph {
+                font-size: 16px;
+                letter-spacing: .02em;
+                display: block;
+            }
+
+            #testimonial .testimonialCard .customParagraph {
+                font-size: 14px;
+            }
+
+            #testimonial .customLink {
+                color: black;
+                font-size: 16px;
+                display: block;
+                width: 100%;
+            }
+
+            #testimonial .testimonialCard .customLink {
+                font-size: 14px;
+            }
+
+            #testimonial .testimonialImageBg .customLink {
+                color: white;
+            }
+
+            #testimonial .customLink:hover {
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            #testimonial .customIcon {
+                font-size: 32px;
+            }
+
+            #testimonial .customTitle,
+            #testimonial .customParagraph,
+            #testimonial .customLink,
+            #testimonial .customIcon,
+            #testimonial .customButton,
+            #testimonial .customImage,
+            #testimonial .customEmbed {
+                margin: 10px 0;
+            }
+
+            #testimonial .testimonialIcons .customTitle,
+            #testimonial .testimonialIcons .customParagraph,
+            #testimonial .testimonialIcons .customLink,
+            #testimonial .testimonialIcons .customIcon,
+            #testimonial .testimonialIcons .customButton,
+            #testimonial .testimonialIcons .customImage,
+            #testimonial .testimonialIcons .customEmbed {
+                margin: 0 0 10px;
+            }
+
+            #testimonial .testimonialParagraphWrap .customTitle,
+            #testimonial .testimonialParagraphWrap .customParagraph,
+            #testimonial .testimonialParagraphWrap .customLink,
+            #testimonial .testimonialParagraphWrap .customIcon,
+            #testimonial .testimonialParagraphWrap .customButton,
+            #testimonial .testimonialParagraphWrap .customImage,
+            #testimonial .testimonialParagraphWrap .customEmbed {
+                margin: 5px 0 0;
+            }
+
+            #testimonial .blockquoteSourceWrap .customTitle,
+            #testimonial .blockquoteSourceWrap .customParagraph,
+            #testimonial .blockquoteSourceWrap .customLink,
+            #testimonial .blockquoteSourceWrap .customIcon,
+            #testimonial .blockquoteSourceWrap .customButton,
+            #testimonial .blockquoteSourceWrap .customImage,
+            #testimonial .blockquoteSourceWrap .customEmbed {
+                margin: 0;
+            }
+
+            .testimonialIcons 0 0 5
+
+            @media (max-width: 1050px) {
+
+                .testimonialIcons {
+                    font-size: 30px;
+                }
+
+                #testimonial .customIcon {
+                    font-size: 30px;
+                }
+            }
+
+            @media (max-width: 767px) {
+
+                #testimonialTitle {
+                    font-size: 32px;
+                }
+
+                #testimonialContent {
+                    text-align: center;
+                }
+
+                #quote-carousel .carousel-indicators {
+                    bottom: -50px;
+                }
+
+                #quote-carousel .carousel-control.left {
+                    top: 60px;
+                }
+
+                #quote-carousel .carousel-control.right {
+                    top: 60px;
+                }
+
+                .testimonialRow {
+                    display: initial;
+                }
+
+                .testimonialImageOuter {
+                    padding-left: 15px;
+                }
+
+                .testimonialIcons {
+                    margin-top: 15px;
+                }
+
+                #testimonial .customTitle {
+                    font-size: 32px;
+                }
+            }
+        </style>
+        <script>
+            // script start
+            $(document).ready(function() {
+
+                $('#quote-carousel').carousel({
+                    pause: true,
+                    interval: 4000,
+                });
+            });
+            // script end
+        </script>
+    </div>
+    <style>
+        #testimonialContainer {
+            background: url('/img/fantasy-PYCCi-iOTtS-ThlKk-sfIb5-U7A3Z.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+    <script>
+        // script start
+        $(document).ready(function() {
+            setTimeout(function() {
+                initializeCarousel();
+            }, 3000);
+        });
+
+        var initializeCarousel = function() {
+            if (window.parent === window.self) {
+                $('#quote-carousel').data('bs.carousel').options.interval = 6000;
+            } else {
+                //$('#quote-carousel').data('bs.carousel').options.interval = 10000;
+                $('#quote-carousel').carousel('pause');
+                setInterval(function() {
+                    $('#quote-carousel').carousel('pause');
+                }, 10000);
+            }
+        }
+        // script end
+    </script>
+</section>
+<section id='team'>
+    <div class='sectionOverlay' id='teamOverlay' style='background: rgba(0, 0, 0, 0)'></div>
+    <div id='outerTeam' class='outerSection noCustomElement'>
+        <div id='teamContainer' class='sectionContainer noCustomElement'>
+            <div id='teamContent' class='sectionContent container-fluid noCustomElement'>
+                <div id='teamTop' class='row noCustomElement'>
+                    <div class='outerGrid col-lg-4 col-sm-6 col-xs-12 noCustomElement'>
+                        <div class='innerGridTable noCustomElement'>
+                            <div id='teamTitleWrap' class='innerTableContent'>
+                                <h2 id='teamTitle' class='teamTitles'>Our Leadership</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='teamParaWrap' class='outerGrid col-md-5 col-sm-6 col-xs-12 noCustomElement'>
+                        <div class='innerGridTable noCustomElement'>
+                            <div id='teamParagraphWrap' class='innerTableContent'>
+                                <p id='teamParagraph' class='teamParagraphs'>We know how important Fantasy Football is to the value of our customers. As a Fantasy Football group, the services provided include everything you need in one place and at the best quiality. We will also expertly perform all that is necessary to transition you from your current solution over to ours. In a world that is constantly changing, you can be sure that the folks here will be by your side with every step of the process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div class='col-lg-10 col-lg-offset-1 col-sm-12 col-sm-offset-0 noCustomElement'>
+                        <div id='teamRowContainer' class='noCustomElement'>
+                            <!-- teamTemplate start --><div class='team4 row noCustomElement'>
+                            <div class='teamTemplate outerGrid col-md-3 col-sm-3 col-xs-12 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div class='innerTableContent noCustomElement'>
+                                        <div class='teamMemberImage'><img class='teamMemberImages' src='/img/team/EmilyYoung.jpg'/></div>
+                                        <div class='teamMemberNameWrap'><h3 class="teamMemberName">Emily Young</h3></div>
+                                        <div class='teamMemberTitleWrap'><h3 class="teamMemberTitle">Chief Executive Officer</h3></div>
+                                        <div class='teamMemberTextWrap'><p class='teamMemberText'>Emily, our founder and director, boasts years of industry expertise and an inspirational commitment to our vision. Without leadership like this, we would not be who we are today.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='teamTemplate outerGrid col-md-3 col-sm-3 col-xs-12 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div class='innerTableContent noCustomElement'>
+                                        <div class='teamMemberImage'><img class='teamMemberImages' src='/img/team/JacobLee.jpg'/></div>
+                                        <div class='teamMemberNameWrap'><h3 class="teamMemberName">Jacob Lee</h3></div>
+                                        <div class='teamMemberTitleWrap'><h3 class="teamMemberTitle">Human Resources Manager</h3></div>
+                                        <div class='teamMemberTextWrap'><p class='teamMemberText'>Jacob has a long history in HR. Before he joined the team in 2009, he spent the previous ten years as HR manager at Business Industry’s headquarters in London.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='teamTemplate outerGrid col-md-3 col-sm-3 col-xs-12 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div class='innerTableContent noCustomElement'>
+                                        <div class='teamMemberImage'><img class='teamMemberImages' src='/img/team/EricHernandez.jpg'/></div>
+                                        <div class='teamMemberNameWrap'><h3 class="teamMemberName">Eric Hernandez</h3></div>
+                                        <div class='teamMemberTitleWrap'><h3 class="teamMemberTitle">Chief Financial Officer</h3></div>
+                                        <div class='teamMemberTextWrap'><p class='teamMemberText'>Once Eric took over as CFO, our investment strategy really began to take shape. His well-rounded background in finance and accounting is a significant driver of success.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='teamTemplate outerGrid col-md-3 col-sm-3 col-xs-12 noCustomElement'>
+                                <div class='innerGridTable noCustomElement'>
+                                    <div class='innerTableContent noCustomElement'>
+                                        <div class='teamMemberImage'><img class='teamMemberImages' src='/img/team/MeganGarcia.jpg'/></div>
+                                        <div class='teamMemberNameWrap'><h3 class="teamMemberName">Megan Garcia</h3></div>
+                                        <div class='teamMemberTitleWrap'><h3 class="teamMemberTitle">Head of Sales</h3></div>
+                                        <div class='teamMemberTextWrap'><p class='teamMemberText'>Megan was instrumental in the record breaking sales during. She joined the team in 2016 and her leadership continues to drive the progress of the sales team.</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- teamTemplate end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #team {
+                color: black;
+            }
+
+            #team .teamImageBg {
+                color: white;
+            }
+
+            #teamContent {
+                word-wrap: break-word;
+            }
+
+            #teamTop {
+                display: flex;
+                margin-bottom: 40px;
+            }
+
+            #teamTitleWrap {
+                text-align: right;
+                margin-right: 15px;
+            }
+
+            #teamTitle {
+                font-size: 48px;
+                letter-spacing: .09em;
+                text-indent: .09em;
+                margin: 0;
+            }
+
+            #teamParaWrap {
+                border-left: 2px solid rgb(193,178,130);
+            }
+
+            #team .teamImageBg #teamParaWrap {
+                border-color: white;
+            }
+
+            #teamParagraphWrap {
+                margin: 15px 0 15px 15px;
+            }
+
+            #teamParagraph {
+                font-size: 12px;
+                line-height: 1.75;
+                margin-bottom: 0;
+                padding-left: 15px;
+            }
+
+            .team4 {
+                display: flex;
+                margin: 0;
+            }
+
+            .teamTemplate {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .teamMemberImages {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            #team .teamImageBg .teamMemberImages {
+                border: 1px solid white;
+            }
+
+            .teamMemberName {
+                font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                margin: 8px 0 0;
+            }
+
+            .teamMemberTitle {
+                color: rgb(193,178,130);
+                font-size: 18px;
+                font-weight: bold;
+                margin: 6px 0;
+            }
+
+            #team .teamImageBg .teamMemberTitle {
+                color: white;
+            }
+
+            .teamMemberText {
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+
+            /* * * * * * * * */
+
+            #team .customTitle {
+                font-size: 40px;
+                letter-spacing: .09em;
+                text-indent: .09em;
+                display: block;
+            }
+
+            #team #teamRowContainer .customTitle {
+                font-size: 24px;
+                letter-spacing: .05em;
+            }
+
+            #team .customParagraph {
+                font-size: 12px;
+                line-height: 1.75;
+                display: block;
+            }
+
+            #team #teamRowContainer .customParagraph {
+                letter-spacing: .05em;
+            }
+
+            #team .customLink {
+                color: black;
+                font-size: 14px;
+                display: block;
+                width: 100%;
+            }
+
+            #team .teamImageBg .customLink {
+                color: white;
+            }
+
+            #team .customLink:hover {
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            #team .customIcon {
+                font-size: 32px;
+            }
+
+            #team .customTitle,
+            #team .customParagraph,
+            #team .customLink,
+            #team .customIcon,
+            #team .customButton,
+            #team .customImage,
+            #team .customEmbed {
+                margin: 10px 0;
+            }
+
+            #team #teamTitleWrap .customIcon,
+            #team #teamTitleWrap .customButton,
+            #team #teamTitleWrap .customImage {
+                margin: 0 0 10px;
+            }
+
+            #team #teamParagraphWrap .customTitle,
+            #team #teamParagraphWrap .customParagraph,
+            #team #teamParagraphWrap .customLink,
+            #team #teamParagraphWrap .customIcon,
+            #team #teamParagraphWrap .customButton,
+            #team #teamParagraphWrap .customImage,
+            #team #teamParagraphWrap .customEmbed {
+                margin: 10px 0 0;
+            }
+
+            #team .teamMemberImage .customIcon,
+            #team .teamMemberImage .customButton,
+            #team .teamMemberImage .customImage {
+                margin: 10px 0 0;
+            }
+
+            #team .teamMemberNameWrap .customTitle,
+            #team .teamMemberNameWrap .customParagraph,
+            #team .teamMemberNameWrap .customLink,
+            #team .teamMemberNameWrap .customIcon,
+            #team .teamMemberNameWrap .customButton,
+            #team .teamMemberNameWrap .customImage,
+            #team .teamMemberNameWrap .customEmbed  {
+                margin: 5px 0 0;
+            }
+
+            #team .teamMemberTitleWrap .customTitle,
+            #team .teamMemberTitleWrap .customParagraph,
+            #team .teamMemberTitleWrap .customLink,
+            #team .teamMemberTitleWrap .customIcon,
+            #team .teamMemberTitleWrap .customButton,
+            #team .teamMemberTitleWrap .customImage,
+            #team .teamMemberTitleWrap .customEmbed  {
+                margin: 0 0 5px;
+            }
+
+            #team .teamMemberTextWrap .customTitle,
+            #team .teamMemberTextWrap .customParagraph,
+            #team .teamMemberTextWrap .customLink,
+            #team .teamMemberTextWrap .customIcon,
+            #team .teamMemberTextWrap .customButton,
+            #team .teamMemberTextWrap .customImage,
+            #team .teamMemberTextWrap .customEmbed  {
+                margin: 5px 0 0;
+            }
+
+            @media only screen and (max-width : 1050px) {
+
+                .teamTemplate {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                .teamMemberName {
+                    font-size: 20px;
+                }
+
+                #team #teamRowContainer .customTitle {
+                    font-size: 20px;
+                }
+            }
+
+            @media only screen and (max-width : 800px) {
+
+                .teamTemplate {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                #teamTop,
+                .team4 {
+                    display: initial;
+                }
+
+                #teamTitleWrap {
+                    text-align: center;
+                    margin-right: 0;
+                }
+
+                #teamTitle {
+                    font-size: 40px;
+                    margin-bottom: 15px;
+                }
+
+                #teamParaWrap {
+                    border-left: none;
+                    border-top: 2px solid rgb(193,178,130);
+                    text-align: center;
+                }
+
+                #teamParagraphWrap {
+                    padding-top: 10px;
+                }
+
+                #teamParagraph {
+                    margin-bottom: 30px;
+                    padding-left: 0;
+                }
+
+                .teamMemberImages {
+                    height: auto;
+                }
+            }
+        </style>
+    </div>
+    <style>
+        #teamContainer {
+            background: rgb(255,255,255);
+        }
+    </style>
+</section>
+<section id='blog'>
+    <div class='sectionOverlay' id='blogOverlay' style='background: rgba(0 ,0, 0, 0.5)'></div>
+    <div id='outerBlog' class='outerSection noCustomElement'>
+        <div id='blogContainer' class='sectionContainer blogImageBg noCustomElement'>
+            <div id='blogContent' class='sectionContent container-fluid noCustomElement'>
+                <div class='row noCustomElement'>
+                    <div id='blogTop' class='col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                        <div id='blogTitleWrap'><h2 id='blogTitle' class='blogTitles'>Our Blog</h2></div>
+                        <div id='blogTitleHrWrap'><hr id='blogTitleHr'></div>
+                    </div>
+                </div>
+                <div id='noPostBlog' class='row noCustomElement' style='display: none'>
+                    <div id='noPostBlogTitleWrap' class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
+                        <h2 id='noPostBlogTitle'>There is no content here yet, but check back soon!</h2>
+                    </div>
+                </div>
+                <div class='row noCustomElement'>
+                    <div class='col-lg-10 col-lg-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 noCustomElement'>
+                        <div id='blogRowContainer' class='noCustomElement'>
+                            <!-- blogTemplate start --><div class='blog3 row'></div><!-- blogTemplate end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #blog {
+                color: black;
+                word-break: break-word;
+            }
+
+            #blog .blogImageBg {
+                color: white;
+            }
+
+            #blogContent {
+                text-align: center;
+            }
+
+            #noPostBlogTitle {
+                font-size: 32px;
+                margin-top: 80px;
+                letter-spacing: .02em;
+            }
+
+            #blogTitle {
+                font-size: 50px;
+            }
+
+            #blog .blogImageBg #noPostBlogTitle,
+            #blog .blogImageBg #blogTitle {
+                color: white;
+            }
+
+            #blogTitleHr {
+                border: 3px solid rgb(193,178,130);
+                width: 30%;
+            }
+
+            #blog .blogImageBg #blogTitleHr {
+                border-color: white;
+            }
+
+            .posts3 {
+                display: flex;
+            }
+
+            .postOuter {
+                margin-top: 30px;
+            }
+
+            .postInner {
+                background-color: white;
+                padding: 40px 10px;
+                box-shadow: 0 0 3px 0 rgb(193,178,130);
+                border-radius: 3px;
+            }
+
+            #blog .blogImageBg .postInner {
+                box-shadow: 0 0 3px 0 white;
+            }
+
+            .blogImages {
+                width: 220px;
+                height: 280px;
+                object-fit: cover;
+            }
+
+            #blogHr {
+                border: 2px solid rgb(193,178,130);
+                width: 50%;
+            }
+
+            .postTitle {
+                color: black;
+                font-size: 20px;
+            }
+
+            .blogButtonWrap {
+                margin-top: 15px;
+            }
+
+            .blogButton {
+                color: white;
+                padding: 5px;
+                border: 2px solid rgb(193,178,130);
+                background-color: rgb(193,178,130);
+                text-decoration: none;
+                border-radius: 2px;
+                cursor: pointer;
+                transition: 0.3s;
+                display: list-item;
+                list-style-type: none;
+            }
+
+            .blogButton:focus {
+                color: white;
+            }
+
+            .blogButton:hover {
+                color: black;
+                background-color: white;
+                border: 2px solid rgb(193,178,130);
+                text-decoration: none;
+            }
+
+            /* * * * * * * * */
+
+            #blog .customTitle {
+                font-size: 40px;
+                display: block;
+            }
+
+            #blog #noPostBlogTitleWrap .customTitle {
+                font-size: 32px;
+            }
+
+            #blog .customParagraph {
+                font-size: 18px;
+                display: block;
+            }
+
+            #blog .customLink {
+                color: black;
+                font-size: 18px;
+                display: block;
+                width: 100%;
+            }
+
+            #blog .blogImageBg .customLink {
+                color: white;
+            }
+
+            #blog .customLink:hover {
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            #blog .customIcon {
+                font-size: 36px;
+            }
+
+            #blog .customTitle,
+            #blog .customParagraph,
+            #blog .customLink,
+            #blog .customIcon,
+            #blog .customButton,
+            #blog .customImage,
+            #blog .customEmbed {
+                margin: 10px 0;
+            }
+
+            #blog #blogTitleWrap .customTitle,
+            #blog #blogTitleWrap .customParagraph,
+            #blog #blogTitleWrap .customLink,
+            #blog #blogTitleWrap .customIcon,
+            #blog #blogTitleHrWrap .customTitle,
+            #blog #blogTitleHrWrap .customParagraph,
+            #blog #blogTitleHrWrap .customLink,
+            #blog #blogTitleHrWrap .customIcon,
+            #blog #noPostBlogTitleWrap .customTitle,
+            #blog #noPostBlogTitleWrap .customParagraph,
+            #blog #noPostBlogTitleWrap .customLink,
+            #blog #noPostBlogTitleWrap .customIcon {
+                color: rgb(193,178,130);
+            }
+
+            #blog .blogImageBg #blogTitleWrap .customTitle,
+            #blog .blogImageBg #blogTitleWrap .customParagraph,
+            #blog .blogImageBg #blogTitleWrap .customLink,
+            #blog .blogImageBg #blogTitleWrap .customIcon,
+            #blog .blogImageBg #blogTitleHrWrap .customTitle,
+            #blog .blogImageBg #blogTitleHrWrap .customParagraph,
+            #blog .blogImageBg #blogTitleHrWrap .customLink,
+            #blog .blogImageBg #blogTitleHrWrap .customIcon,
+            #blog .blogImageBg #noPostBlogTitleWrap .customTitle,
+            #blog .blogImageBg #noPostBlogTitleWrap .customParagraph,
+            #blog .blogImageBg #noPostBlogTitleWrap .customLink,
+            #blog .blogImageBg #noPostBlogTitleWrap .customIcon {
+                color: white;
+            }
+
+            #blog #blogTitleWrap .customIcon,
+            #blog #blogTitleWrap .customButton,
+            #blog #blogTitleWrap .customImage,
+            #blog #blogTitleHrWrap .customIcon,
+            #blog #blogTitleHrWrap .customButton,
+            #blog #blogTitleHrWrap .customImage {
+                margin: 0;
+            }
+
+            @media only screen and (max-width : 800px) {
+
+                .postTitle {
+                    font-size: 18px;
+                }
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                #noPostBlogTitle {
+                    font-size: 25px;
+                }
+
+                .posts3 {
+                    display: initial;
+                    margin: 0;
+                }
+
+                .postOuter {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        </style>
+    </div>
+    <style>
+        #blogContainer {
+            background: url('/img/fantasy-GGJPS-aerch-PBwiv-E2SpC-3YhBz.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+    <script>
+        // script start
+        $(document).ready(function() {
+            setTimeout(function() {
+                checkBlogStatus();
+            }, 1000);
+        });
+
+        var checkBlogStatus = function() {
+            if (document.getElementsByClassName('blogPost').length === 0 || (document.getElementsByClassName('blogPost').length === 1 && document.getElementsByClassName('blogPost')[0].innerHTML.trim() === '')) {
+                document.getElementById('noPostBlog').style.display = '';
+            }
+        }
+        // script end
+    </script>
+</section>
+<section id='contact'>
+    <div class='sectionOverlay' id='contactOverlay' style='background: rgba(0, 0, 0, 0)'></div>
+    <div id='outerContact' class='outerSection noCustomElement'>
+        <div id='contactContainer' class='sectionContainer noCustomElement'>
+            <div id='contactContent' class='sectionContent container-fluid noCustomElement'>
+                <div class='row noCustomElement'>
+                    <div id='contactWrap' class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 noCustomElement'>
+                        <div id='contactTop' class='row noCustomElement'>
+                            <div class='col-sm-12 noCustomElement'>
+                                <div id='contactTitleWrap'><h2 id='contactTitle' class='contactTitles'>Message Us</h2></div>
+                                <div id='contactTitleHrWrap'><hr id='contactTitleHr'></div>
+                                <div id='contactSubWrap'><p class='contactTitleSub'>Use the form to send us an email or just give us a call:</p></div>
+                                <div id='contactPhoneWrap'><p id='contactPhoneInner' class='contactTitleSub'>(123) 456-7890</p></div>
+                            </div>
+                        </div>
+                        <div class='row noCustomElement'>
+                            <div class='col-sm-12 noCustomElement'>
+                                <form id='contactForm'>
+                                    <div id='contactRowContainer' class='noCustomElement'>
+                                        <!-- inputTemplate start --><div class='input2 row'>
+                                        <div class='contactTemplate form-group col-sm-6 noCustomElement'>
+                                            <input id='contactName' type='text' id='contactInputName' class='contactFormStyle contactFormInput form-control' placeholder='Name'>
+                                        </div>
+
+                                        <div class='contactTemplate form-group col-sm-6 noCustomElement'>
+                                            <input id='contactEmail' type='text' id='contactInputName' class='contactFormStyle contactFormInput form-control' placeholder='Email'>
+                                        </div>
+                                    </div><div class='input2 row'>
+                                        <div class='contactTemplate form-group col-sm-6 noCustomElement'>
+                                            <input id='contactPhone' type='text' id='contactInputName' class='contactFormStyle contactFormInput form-control' placeholder='Phone'>
+                                        </div>
+
+                                        <div class='contactTemplate form-group col-sm-6 noCustomElement'>
+                                            <input id='contactCompany' type='text' id='contactInputName' class='contactFormStyle contactFormInput form-control' placeholder='Company'>
+                                        </div>
+                                    </div><div class='input2 row'>
+                                        <div class='contactTemplate form-group col-sm-6 noCustomElement'>
+                                            <input id='contactAddress' type='text' id='contactInputName' class='contactFormStyle contactFormInput form-control' placeholder='Address'>
+                                        </div>
+
+                                        <div class='contactTemplate form-group col-sm-6 noCustomElement'>
+                                            <input id='contactSubject' type='text' id='contactInputName' class='contactFormStyle contactFormInput form-control' placeholder='Subject'>
+                                        </div>
+                                    </div><!-- inputTemplate end -->
+                                    </div>
+                                    <div class='form-row row noCustomElement'>
+                                        <div class='form-group col-sm-12 noCustomElement'>
+                                            <textarea placeholder='What can we do for you?' id='contactMessage' class='contactFormStyle form-control'></textarea>
+                                        </div>
+                                    </div>
+                                    <div class='form-row row noCustomElement'>
+                                        <div class='form-group col-sm-12 noCustomElement'>
+                                            <div id='contactButtons'><a class='contactButton' onclick='submitContactForm()'>Submit</a></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #contact {
+                color: black;
+            }
+
+            #contact .contactImageBg {
+                color: white;
+            }
+
+            #contactContent {
+                word-wrap: break-word;
+                text-align: center;
+            }
+
+            #contactWrap {
+                background-color: white;
+            }
+
+            #contact .contactImageBg #contactWrap {
+                background-color: transparent;
+            }
+
+            #contactTitle {
+                font-size: 45px;
+                margin-bottom: 10px;
+            }
+
+            #contactTitleHr {
+                border: 2px solid rgb(193,178,130);
+                width: 20%;
+            }
+
+            #contact .contactImageBg #contactTitleHr {
+                border-color: white;
+            }
+
+            .contactTitleSub {
+                font-size: 18px;
+                display: block;
+            }
+
+            #contactPhoneWrap {
+                margin-bottom: 50px;
+            }
+
+            #contactPhoneInner {
+                font-size: 22px;
+            }
+
+            .contactFormInput {
+                height: 75px;
+            }
+
+            .contactFormStyle {
+                border: 1px solid rgb(193,178,130);
+                border-radius: 4px;
+                padding: 20px;
+                font-size: 16px;
+            }
+
+            #contact .contactImageBg .contactFormStyle {
+                border-color: white;
+            }
+
+            #contactMessage {
+                height: 150px;
+                resize: none;
+            }
+
+            #contactButtons {
+                margin: 10px 0 40px;
+            }
+
+            .contactButton {
+                color: rgb(193,178,130);
+                padding: 10px 80px;
+                border: 1px solid rgb(193,178,130);
+                text-decoration: none;
+                cursor: pointer;
+                transition: 0.4s;
+                display: inline-block;
+            }
+
+            .contactButton:focus {
+                color: rgb(193,178,130);
+            }
+
+            .contactButton:hover {
+                color: white;
+                background-color: rgb(193,178,130);
+                text-decoration: none;
+            }
+
+            #contact .contactImageBg .contactButton {
+                color: white;
+                border-color: white;
+            }
+
+            /* * * * * * * * */
+
+            #contact .customTitle {
+                font-size: 40px;
+                display: block;
+            }
+
+            #contact .customParagraph {
+                font-size: 18px;
+                display: block;
+            }
+
+            #contact .customLink {
+                color: black;
+                font-size: 18px;
+                display: block;
+                width: 100%;
+            }
+
+            #contact .customLink:hover {
+                opacity: 0.6;
+                text-decoration: none;
+            }
+
+            #contact .customIcon {
+                font-size: 30px;
+            }
+
+            #contact .customTitle,
+            #contact .customParagraph,
+            #contact .customLink,
+            #contact .customIcon,
+            #contact .customButton,
+            #contact .customImage,
+            #contact .customEmbed {
+                margin: 10px 0;
+            }
+
+            #contact #contactTitleWrap .customIcon,
+            #contact #contactTitleWrap .customButton,
+            #contact #contactTitleWrap .customImage {
+                margin: 0;
+            }
+
+            #contact #contactTitleHrWrap .customIcon,
+            #contact #contactTitleHrWrap .customButton,
+            #contact #contactTitleHrWrap .customImage,
+            #contact #contactSubWrap .customIcon,
+            #contact #contactSubWrap .customButton,
+            #contact #contactSubWrap .customImage,
+            #contact #contactPhoneWrap .customIcon,
+            #contact #contactPhoneWrap .customButton,
+            #contact #contactPhoneWrap .customImage {
+                margin: 0 0 10px;
+            }
+
+            @media only screen and (max-width : 767px) {
+
+                #contactTitle {
+                    font-size: 40px;
+                }
+
+                .contactTitleSub,
+                #contact .customParagraph,
+                #contact .customLink {
+                    font-size: 16px;
+                }
+            }
+        </style>
+    </div>
+    <style>
+        #contactContainer {
+            background: rgb(255,255,255);
+        }
+    </style>
+</section>
+<div id='footer'>
+    <h4 class='pageFooter' id='footerFour'>&copy; Fantasy Music</h4>
+</div>
+<div id='newsletterOuter' delay="20000" style='display:none' class='noCustomElement'>
+    <div id='newsOverlaySection' class='noCustomElement'>
+        <button id='closeNewsletterButton' class='newsletterClose' onclick='document.getElementById("newsletterOuter").style.display = "none"'>
+            <i class="newsletterCloseIcon fa fa-times" aria-hidden="true"></i>
+        </button>
+        <div class='row innerTableContent noCustomElement'>
+            <div id='newsletterBorder' class='col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 noCustomElement'>
+                <div id='newsletterTitleWrap'><h3 id='newsletterTitle' class='newsLetterTitles'>WANT AN EXTRA 10% OFF YOUR PURCHASE?</h3></div>
+                <div id='newsletterSubtitle1Wrap'><h4 id='newsletterSubtitle1' class='newsletterSubtitles'>SIGN UP FOR OUR NEWSLETTER & START SAVING TODAY</h4></div>
+                <form id='newsletterForm'>
+                    <div id='newsletterRowContainer'>
+                        <input id='newsletterInput' type='email' class='form-control' placeholder='EMAIL ADDRESS'>
+                        <a id='newsletterButton' class='newsletterButton' onclick='submitNewsletter()'>SUBMIT</a>
+                    </div>
+                </form>
+                <div id='newsletterIconContainer'>
+                    <i id='newsletterIcon1' class="newsletterIcons fas fa-asterisk"></i>
+                    <i id='newsletterIcon2' class="newsletterIcons fas fa-asterisk"></i>
+                    <i id='newsletterIcon3' class="newsletterIcons fas fa-asterisk"></i>
+                    <i id='newsletterIcon4' class="newsletterIcons fas fa-asterisk"></i>
+                    <i id='newsletterIcon5' class="newsletterIcons fas fa-asterisk"></i>
+                </div>
+                <div id='newsletterSubtitle2Wrap'><p id='newsletterSubtitle2' class='newsletterSubtitles'>Enter your email now so you don't miss out</p></div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        #newsLetterOuter {
+            word-break: break-word;
+        }
+
+        #closeNewsletterButton {
+            position: absolute;
+            top: 55px;
+            right: 40px;
+            border: none;
+            font-size: 30px;
+            background: transparent;
+            cursor: pointer;
+            color: white;
+            transition: 0.4s;
+            z-index: 100;
+        }
+
+        #closeNewsletterButton:hover {
+            opacity: 0.5;
+        }
+
+        #newsOverlaySection {
+            display: table;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
+            overflow-y: scroll;
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+        }
+
+        #newsOverlaySection::-webkit-scrollbar {
+            width: 0 !important;
+        }
+
+        #newsletterTitle {
+            font-size: 50px;
+            letter-spacing: .02em;
+            margin: 40px 0 0;
+            color: white;
+            width: 100%;
+            text-shadow: 0 0 3px black;
+        }
+
+        #newsletterSubtitle1 {
+            color: white;
+            font-size: 20px;
+            letter-spacing: .1em;
+            margin-top: 30px;
+        }
+
+        #newsletterRowContainer {
+            margin: 50px auto 0;
+            padding: 15px;
+            background: white;
+            width: 80%;
+        }
+
+        #newsletterInput {
+            margin: 10px auto;
+            color: white;
+            width: 65%;
+            height: 44px;
+            border-radius: 0;
+            border: none;
+            background: rgba(0,0,0,0.4);
+            display: inline-block;
+        }
+
+        #newsletterInput:focus {
+            border-color: black;
+            box-shadow: 0 0 3px black;
+        }
+
+        #newsletterInput::placeholder {
+            color: white;
+            letter-spacing: 0.05em
+        }
+
+        #newsletterButton {
+            color: white;
+            padding: 13px 45px 11px;
+            background: rgba(0,0,0,0.8);
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        #newsletterButton:focus {
+            color: white;
+        }
+
+        #newsletterButton:hover {
+            color: white;
+            background: rgb(193,178,130);
+        }
+
+        #newsletterIconContainer {
+            margin-top: 40px;
+        }
+
+        .newsletterIcons {
+            color: white;
+            font-size: 22px;
+            margin: 0 6px;
+        }
+
+        #newsletterSubtitle2 {
+            color: white;
+            font-style: italic;
+            font-size: 18px;
+            margin: 30px 0 40px;
+            text-shadow: 0 0 3px black;
+        }
+
+        /* * * * * * * * */
+
+        #newsletterOuter .customTitle {
+            font-size: 40px;
+            display: block;
+        }
+
+        #newsletterOuter .customParagraph {
+            font-size: 18px;
+            display: block;
+        }
+
+        #newsletterOuter .customLink {
+            font-size: 18px;
+            display: block;
+            width: 100%;
+        }
+
+        #newsletterOuter .customLink:hover {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        #newsletterOuter .customIcon {
+            font-size: 28px;
+        }
+
+        #newsletterOuter .customTitle,
+        #newsletterOuter .customParagraph,
+        #newsletterOuter .customLink,
+        #newsletterOuter .customIcon,
+        #newsletterOuter .customButton,
+        #newsletterOuter .customImage,
+        #newsletterOuter .customEmbed {
+            margin: 10px 0;
+        }
+
+        #newsletterOuter .customTitle,
+        #newsletterOuter .customParagraph,
+        #newsletterOuter .customLink,
+        #newsletterOuter .customIcon {
+            color: white;
+        }
+
+        #newsletterOuter #newsletterRowContainer .customTitle,
+        #newsletterOuter #newsletterRowContainer .customParagraph,
+        #newsletterOuter #newsletterRowContainer .customLink,
+        #newsletterOuter #newsletterRowContainer .customIcon {
+            color: black;
+        }
+
+        @media only screen and (max-width : 1050px) {
+
+            #newsletterInput {
+                width: 65%;
+            }
+        }
+
+        @media only screen and (max-width : 767px) {
+
+            #newsletterTitle {
+                font-size: 32px;
+                margin-top: 80px;
+            }
+
+            #newsletterSubtitle1 {
+                font-size: 18px;
+            }
+
+            #newsletterRowContainer {
+                width: 100%;
+                padding: 8px 4px;
+            }
+
+            #newsletterInput {
+                width: 95%;
+            }
+
+            #newsletterButton {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width : 320px) {
+
+            #newsletterTitle {
+                font-size: 35px;
+            }
+
+            #newsletterInput {
+                width: 95%;
+            }
+        }
+    </style>
+</div>
+</body>
+<script id='generalJS'>
+    $(document).ready(function() {
+        loadLeiaAd();
+        initializeSmoothScroll();
+        if (window.self !== window.top) {
+            if (document.getElementById('menuOverlaySection')) {
+                document.getElementById('menuOverlaySection').style.height = window.parent.innerHeight.toString() + 'px';
+            }
+
+            if (document.getElementById('menuBorder')) {
+                document.getElementById('menuBorder').style.maxHeight = window.parent.innerHeight.toString() + 'px';
+            }
+
+            if (window.orientation !== undefined && document.getElementById('headerBackgroundVideo')) {
+                updateBgimageSizes();
+                window.addEventListener('orientationchange', function() {
+                    updateBgimageSizes();
+                });
+            }
+        } else if (document.getElementById('newsletterOuter') && document.getElementById('newsletterOuter').getAttribute('enabled') === 'true') {
+            var time = parseInt(document.getElementById('newsletterOuter').getAttribute('delay'));
+            if (time > 0) {
+                setTimeout(function() {
+                    $('#newsletterOuter').css('opacity', '0');
+                    $('#newsletterOuter').css('display', '');
+                    $('#newsletterOuter').animate({opacity: '1'}, 1000);
+                }, time);
+            }
+        }
+    });
+
+    var initializeSmoothScroll = function() {
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1000);
+        });
+    }
+
+    var updateBgimageSizes = function() {
+        document.getElementById('headerBackgroundVideo').style.height = document.getElementById('headerContainer').offsetHeight.toString() + 'px';
+    }
+
+    var loadLeiaAd = function() {
+        $.ajax({
+            url: 'https://heyleia.com/php/getAdStatus.php',
+            type: 'GET',
+            data: {'domain': window.location.hostname},
+            success: function(type) {
+                if (type === 'ad') {
+                    addLeiaAd();
+                }
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        });
+    }
+
+    var addLeiaAd = function() {
+        var img = document.createElement('img');
+        var tag = document.createElement('a');
+        img.id = 'leiaAdLogo';
+        tag.id = 'leiaAdLogoA';
+        img.setAttribute('src', 'https://heyleia.com/images/poweredBy.png');
+
+        if (window.self === window.top && window.location.search !== '?site=live') {
+            tag.setAttribute('href', 'https://heyleia.com/direct?src=site');
+            tag.setAttribute('target', '_blank');
+        } else {
+            img.onclick = function() {
+                if (window.location.search === '?site=live') {
+                    swal('Remove Leia Ad', 'You can remove this ad by upgrading to Leia Pro for less than $0.99 per month! This includes hosting and everything else you need for your site.', 'info');
+                } else {
+                    swal({
+                        title: 'Remove Leia Ad',
+                        text: 'You can remove this ad by upgrading to Leia Pro for less than $0.99 per month! This includes hosting and everything else you need for your site.',
+                        type: 'info',
+                        icon: 'info',
+                        closeOnClickOutside: true,
+                        showCancelButton: true,
+                        buttons: {
+                            cancel: 'Not Now',
+                            submit: {
+                                text: 'Learn More',
+                                value: 'learn',
+                            }
+                        },
+                        closeOnConfirm: true
+                    }).then(function(isConfirm) {
+                        if (isConfirm == 'learn') {
+                            window.open('https://heyleia.com/upgrade', '_blank');
+                        }
+                    });
+                }
+            }
+        }
+
+        tag.appendChild(img);
+        document.body.appendChild(tag);
+    }
+
+    var mainColor = 'rgb(193,178,130)';
+
+    var applyFancyTop = function(top) {
+        if (document.getElementById('fancyStyle')) {
+            document.getElementById('fancyStyle').parentElement.removeChild(document.getElementById('fancyStyle'));
+        }
+
+        var style = document.createElement('style');
+        style.id = 'fancyStyle';
+        var txt = document.createTextNode('#fancybox-wrap {top: ' + top.toString() + 'px !important;}');
+        style.appendChild(txt);
+        document.body.appendChild(style);
+    }
+
+    var addedSpinner = false;
+    var submitContactForm = function() {
+        swal("Are you sure you want to submit this message?", {
+            buttons: {
+                no: {
+                    text: "Cancel",
+                    value: "Cancel",
+                    className: 'swal-button swal-button--cancel',
+                    closeModal: false,
+                },
+                yes: {
+                    text: "Submit",
+                    value: "ok"
+                },
+            },
+            title: 'Confirmation',
+            type: 'info',
+            icon: 'info'
+        }).then((value) => {
+            if (value === 'Cancel') {
+                swal.close();
+            } else {
+                var spinner = document.createElement('div');
+                var outer = document.createElement('div');
+
+                outer.id = 'spinnerLoading';
+                spinner.className = 'spinnerLoading';
+                outer.style.background = 'rgba(0,0,0,0.7)';
+                outer.style.borderRadius = '20px';
+                outer.style.position = 'fixed';
+                outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+                outer.style.width = '205px';
+                outer.style.top = '30%';
+                outer.style.height = '205px';
+                outer.style.zIndex = '10000';
+                spinner.style.marginLeft = '42.5px';
+                spinner.style.marginTop = '42.5px';
+                outer.appendChild(spinner);
+                document.body.appendChild(outer);
+
+                if (!addedSpinner) {
+                    addedSpinner = true;
+                    addSpinnerStyle();
+                }
+
+                var dataObj = {}
+                if (document.getElementById('contactName')) {
+                    dataObj['name'] = document.getElementById('contactName').value;
+                }
+                if (document.getElementById('contactEmail')) {
+                    dataObj['email'] = document.getElementById('contactEmail').value;
+                }
+                if (document.getElementById('contactPhone')) {
+                    dataObj['phone'] = document.getElementById('contactPhone').value;
+                }
+                if (document.getElementById('contactCompany')) {
+                    dataObj['company'] = document.getElementById('contactCompany').value;
+                }
+                if (document.getElementById('contactStreet')) {
+                    dataObj['street'] = document.getElementById('contactStreet').value;
+                }
+                if (document.getElementById('contactCity')) {
+                    dataObj['city'] = document.getElementById('contactCity').value;
+                }
+                if (document.getElementById('contactState')) {
+                    dataObj['state'] = document.getElementById('contactState').value;
+                }
+                if (document.getElementById('contactSubject')) {
+                    dataObj['subject'] = document.getElementById('contactSubject').value;
+                }
+                if (document.getElementById('contactMessage')) {
+                    dataObj['message'] = document.getElementById('contactMessage').value;
+                }
+
+                $.ajax({
+                    url: 'https://heyleia.com/php/clientContact.php',
+                    data: dataObj,
+                    type: 'POST',
+                    success: function(data) {
+                        document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                        if (data === 'success') {
+                            swal("Success", "You have successfully submitted your message! We will contact you at our earliest convenience.", "success");
+                            document.body.className = '';
+                        } else {
+                            swal("Uh Oh!", data, "error");
+                            document.body.className = '';
+                        }
+                    },
+                    error: function(err) {
+                        console.log(err);
+                        document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                        swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                        document.body.className = '';
+                    }
+                });
+            }
+        });
+    }
+
+    var submitNewsletter = function() {
+        var spinner = document.createElement('div');
+        var outer = document.createElement('div');
+
+        outer.id = 'spinnerLoading';
+        spinner.className = 'spinnerLoading';
+        outer.style.background = 'rgba(0,0,0,0.7)';
+        outer.style.borderRadius = '20px';
+        outer.style.position = 'fixed';
+        outer.style.left = ((window.innerWidth - 205) / 2).toString() + 'px';
+        outer.style.width = '205px';
+        outer.style.top = '30%';
+        outer.style.height = '205px';
+        outer.style.zIndex = '10000';
+        spinner.style.marginLeft = '42.5px';
+        spinner.style.marginTop = '42.5px';
+        outer.appendChild(spinner);
+        document.body.appendChild(outer);
+
+        if (!addedSpinner) {
+            addedSpinner = true;
+            addSpinnerStyle();
+        }
+
+        var dataObj = {
+            email: document.getElementById('newsletterInput').value
+        }
+
+        $.ajax({
+            url: 'https://heyleia.com/php/clientNewsletter.php',
+            data: dataObj,
+            type: 'POST',
+            success: function(data) {
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                if (data === 'success') {
+                    swal("Success", "You have successfully subscribed to our mailing list!", "success").then(function() {
+                        document.getElementById('newsletterOuter').style.display = 'none';
+                    });
+
+                    document.body.className = '';
+                } else {
+                    swal("Uh Oh!", data, "error");
+                    document.body.className = '';
+                }
+            },
+            error: function(err) {
+                console.log(err);
+                document.getElementById('spinnerLoading').parentElement.removeChild(document.getElementById('spinnerLoading'));
+                swal("Uh Oh!", "There was a problem. Please try again later.", "error");
+                document.body.className = '';
+            }
+        });
+    }
+
+    var addSpinnerStyle = function() {
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(".spinnerLoading {border: 16px solid #f3f3f3; /* Light grey */border-top: 16px solid #3498db; /* Blue */border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;}@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}"));
+        document.body.appendChild(style);
+    };
+</script>
+</html>
